@@ -1,0 +1,11 @@
+main {
+    display: block; // for IE
+    width: 100%;
+    margin: auto;
+    padding-top: 32px;
+    height: 10000px;
+    
+    @media only screen and (min-width: 560px) {
+        padding-top: 64px;
+    }
+}
