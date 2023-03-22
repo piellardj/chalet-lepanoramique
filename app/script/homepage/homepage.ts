@@ -1,4 +1,5 @@
-import path = require("path");
+import fs from "fs";
+import path from "path";
 
 import { IBody } from "../../components/homepage/body/template-interface";
 import IPage from "../../components/page/template-interface";
@@ -6,9 +7,12 @@ import IPage from "../../components/page/template-interface";
 import * as Builder from "../page-builder";
 import IHomepageData from "./i-homepage-data";
 
-function buildPageData(homepageData: IHomepageData): IPage {
+function buildPageData(homepageData: IHomepageData, headerBackgroundImageUrl: string): IPage {
     const homepageBodyData: IBody = {
         header: {
+            background: {
+                imageUrl: headerBackgroundImageUrl,
+            },
             topBar: {
                 phone: homepageData.phone,
                 email: homepageData.email,
@@ -34,7 +38,17 @@ function buildPageData(homepageData: IHomepageData): IPage {
  * @param destinationDir Root directory in which the generated files will be copied
  */
 function build(data: IHomepageData, destinationDir: string): void {
-    const pageData: IPage = buildPageData(data);
+    const headerBackgroundUrl = path.join("rc", "header-background.jpg");
+    const headerBackgroundDestFilepath = path.join(destinationDir, headerBackgroundUrl);
+
+    if (!fs.existsSync(path.join(destinationDir, "rc"))) {
+        fs.mkdirSync(path.join(destinationDir, "rc"));
+    }
+
+    const sourcePath = path.resolve(__dirname, "..", "..", "..", data.headerBackgroundImageFilepath);
+    console.log(sourcePath);
+    fs.copyFileSync(sourcePath, headerBackgroundDestFilepath);
+    const pageData: IPage = buildPageData(data, headerBackgroundUrl);
 
     Builder.buildPage(destinationDir, pageData, {
         minifyScript: true,
@@ -42,3 +56,4 @@ function build(data: IHomepageData, destinationDir: string): void {
 }
 
 export { build };
+

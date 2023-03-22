@@ -1,5 +1,5 @@
 <header>
-    #include('homepage/header-background')
+    #include('homepage/header-background', background)
 
     <div id="top-bar">
         <a class="top-bar-item" id="phone" href="tel:#=(topBar.phone)">#=(topBar.phone)</a>
@@ -9,5 +9,9 @@
 
     #include('homepage/nav-bar')
 
-    <div id="header-title">Hôtel Le Panoramique</div>
+    <div id="header-content">
+        <div id="top-bar-placeholder"></div>
+        <div id="header-title">Hôtel Le Panoramique</div>
+        <div id="header-booking"></div>
+    </div>
 </header>

@@ -1,6 +1,6 @@
-import { Homepage } from "../../build/script/index";
+import minimist from "minimist";
+import * as Homepage from "./homepage/homepage";
 import IHomepageData from "./homepage/i-homepage-data";
-import minimist = require("minimist");
 
 const data: IHomepageData = {
     pageDescription: "Hôtel Le Panoramique",
@@ -9,6 +9,8 @@ const data: IHomepageData = {
     email: "monemail@domaine.fr",
     phone: "01 02 03 04 05",
     address: "quelque part 38142 Mizoën",
+
+    headerBackgroundImageFilepath: "rc\\_DSC6000 (1).jpg",
 };
 
 function IsStringNullOrEmpty(str: unknown): boolean {

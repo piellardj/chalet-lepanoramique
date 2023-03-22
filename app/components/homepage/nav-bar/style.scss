@@ -1,3 +1,5 @@
+@use 'common/common';
+
 nav#nav-bar {
     display: flex;
     flex-flow: nowrap;
@@ -6,14 +8,23 @@ nav#nav-bar {
     background: transparent;
     transition: background .3s;
     z-index: 2;
+    box-sizing: border-box;
     
     &.opaque {
-        background: red;
+        background: black;
+        background: rgba(0,0,0,0.7);
+        backdrop-filter: blur(10px);
     }
     &.sticky {
         position: fixed;
         top: 0;
         width: 100%;
+    }
+
+    #nav-bar-content {
+        width: 100%;
+        max-width: common.$header-max-width;
+        margin: auto;
     }
 
     #header-logo {

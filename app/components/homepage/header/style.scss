@@ -1,30 +1,67 @@
+@use 'common/common';
+
 header {
     width: 100%;
     height: 100vh;
 
-    #top-bar {
-        display: flex;
-        flex-flow: row wrap;
-        font-size: 12px;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 0px #000000;
+    $top-bar-height: 30px;
     
-        .top-bar-item {
-            padding: 6px 8px;
-            margin: 2px 24px
-        }
+    #top-bar {
+        display: none;
+
+        @media only screen and (min-width: 600px) {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            max-width: common.$header-max-width;
+            margin: auto;
+            height: $top-bar-height;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 0px #000000;
         
-        a, a:visited {
-            text-decoration: none;
-            color: white;
+            .top-bar-item {
+                padding: 6px 8px;
+                margin: 0 12px
+            }
+            
+            a, a:visited {
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 
-    #header-title {
+    #header-content {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-size: 48px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: $top-bar-height;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+
+        #top-bar-placeholder {
+            width: 100%;
+            height: $top-bar-height;
+        }
+    
+        #header-title {
+            font-size: 48px;
+            color: white;
+            text-shadow: 1px 1px 0px #000000;
+            user-select: none;
+        }
+    
+        #header-booking {
+            background: red;
+            width: 512px;
+            height: 320px;
+            margin: 32px;
+        }
     }
 }

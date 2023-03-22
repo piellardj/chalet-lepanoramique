@@ -6,7 +6,8 @@ namespace Page.NavBar {
             throw new Error();
         }
 
-        if (window.scrollY < topBar.getBoundingClientRect().height) {
+        const topBarHeight = topBar.getBoundingClientRect().height;
+        if (window.scrollY <= topBarHeight) {
             header.classList.remove("opaque");
             header.classList.remove("sticky");
         } else {

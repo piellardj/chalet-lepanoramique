@@ -1,3 +1,3 @@
 export interface IHeaderBackground {
-    a: 0;
+    imageUrl: string;
 }

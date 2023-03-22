@@ -5,6 +5,8 @@ interface IHomepageData {
     phone: string;
     email: string;
     address: string;
+
+    headerBackgroundImageFilepath: string;
 }
 
 export default IHomepageData;
