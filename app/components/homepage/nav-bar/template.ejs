@@ -1,5 +1,15 @@
-<nav id="nav-bar">
+<nav id="nav-bar" class="opaque">
     <div id="nav-bar-content">
-        <div id="header-logo" alt="Logo"></div>
+        <div id="nav-bar-logo" alt="Logo" onclick="Page.NavBar.scrollTo('#top-bar-placeholder')">logo</div>
+        <div id="nav-bar-items">
+            <div class="nav-bar-item" onclick="Page.NavBar.scrollTo('#chalet')">Le chalet</div>
+            <div class="nav-bar-item" onclick="Page.NavBar.scrollTo('#rooms')">Les chambres</div>
+            <div class="nav-bar-item" onclick="Page.NavBar.scrollTo('#restaurant')">Le restaurant</div>
+            <div class="nav-bar-item" onclick="Page.NavBar.scrollTo('#summer')">L'été</div>
+            <div class="nav-bar-item" onclick="Page.NavBar.scrollTo('#winter')">L'hiver</div>
+            <div class="nav-bar-item" onclick="Page.NavBar.scrollTo('#infos')">Infos utiles</div>
+            <!-- <div class="nav-bar-item" onclick="Page.NavBar.scrollTo('#pics')">Photos</div> -->
+        </div>
+        <div id="nav-bar-booknow" onclick="Page.NavBar.scrollTo('header')">Réserver</div>
     </div>
 </nav>

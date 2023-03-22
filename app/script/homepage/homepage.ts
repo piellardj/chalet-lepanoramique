@@ -8,6 +8,8 @@ import * as Builder from "../page-builder";
 import IHomepageData from "./i-homepage-data";
 
 function buildPageData(homepageData: IHomepageData, headerBackgroundImageUrl: string): IPage {
+    const addressGmapLink = "https://www.google.com/maps/search/?api=1&query=panoramique%20mizoen";
+
     const homepageBodyData: IBody = {
         header: {
             background: {
@@ -17,8 +19,15 @@ function buildPageData(homepageData: IHomepageData, headerBackgroundImageUrl: st
                 phone: homepageData.phone,
                 email: homepageData.email,
                 address: homepageData.address,
+                addressGmapLink,
             },
-        }
+        },
+        footer: {
+            phone: homepageData.phone,
+            email: homepageData.email,
+            address: homepageData.address,
+            addressGmapLink,
+        },
     };
     const homepageBodyEjs = Builder.CustomEjs.loadComponent(path.join("homepage", "body"));
     const homepageBodyStr = Builder.CustomEjs.render(homepageBodyEjs, homepageBodyData);

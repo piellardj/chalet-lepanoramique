@@ -4,7 +4,7 @@
     <div id="top-bar">
         <a class="top-bar-item" id="phone" href="tel:#=(topBar.phone)">#=(topBar.phone)</a>
         <a class="top-bar-item" id="email" href="mailto:#=(topBar.email)">#=(topBar.email)</a>
-        <a class="top-bar-item" id="address" href="https://www.google.com/maps/search/?api=1&query=panoramique%20mizoen">#=(topBar.address)</a>
+        <a class="top-bar-item" id="address" href="#=(topBar.addressGmapLink)">#=(topBar.address)</a>
     </div>
 
     #include('homepage/nav-bar')
@@ -12,6 +12,9 @@
     <div id="header-content">
         <div id="top-bar-placeholder"></div>
         <div id="header-title">Hôtel Le Panoramique</div>
-        <div id="header-booking"></div>
+        <div id="header-booking">
+            <div id="booking-header">Réservez en direct au meilleur tarif</div>
+            <div id="booking-content"></div>
+        </div>
     </div>
 </header>

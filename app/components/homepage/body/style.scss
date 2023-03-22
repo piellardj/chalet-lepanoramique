@@ -1,11 +1,22 @@
 main {
-    display: block; // for IE
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     width: 100%;
     margin: auto;
     padding-top: 32px;
-    height: 10000px;
-    
-    @media only screen and (min-width: 560px) {
-        padding-top: 64px;
-    }
+}
+
+section {
+    margin: 0 32px;
+    max-width: 960px;
+    min-height: 512px;
+    background: white;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
 }

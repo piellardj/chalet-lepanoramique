@@ -1,36 +1,7 @@
-@use'common/theme';
-
-@include theme.declare-css-variables();
-
-:root {
-    color-scheme: light dark;
-}
-
 html {
-    display: flex; // to make footer stick to bottom if short page
-    min-height: 100%; // to make footer stick to bottom if short page
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0px;
-    background-attachment: fixed;
-
-    @include theme.page-theme;
-}
-
-main {
-    display: block; // for IE to see background image
-    flex-grow: 1;
-    padding-bottom: 32px;
-}
-
-h1,
-h2,
-h3 {
-    @include theme.color-title(color);
+    margin: 0;
 }

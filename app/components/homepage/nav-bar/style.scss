@@ -1,20 +1,15 @@
 @use 'common/common';
 
 nav#nav-bar {
-    display: flex;
-    flex-flow: nowrap;
-    align-items: center;
-    padding: 16px;
+    $logo-width: 96px;
+
+    position: relative;
+    padding: 4px 16px;
     background: transparent;
     transition: background .3s;
     z-index: 2;
     box-sizing: border-box;
-    
-    &.opaque {
-        background: black;
-        background: rgba(0,0,0,0.7);
-        backdrop-filter: blur(10px);
-    }
+
     &.sticky {
         position: fixed;
         top: 0;
@@ -22,14 +17,69 @@ nav#nav-bar {
     }
 
     #nav-bar-content {
+        display: flex;
+        flex-flow: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         max-width: common.$header-max-width;
         margin: auto;
+        user-select: none;
     }
 
-    #header-logo {
-        width: 32px;
-        height: 32px;
+    #nav-bar-logo {
+        min-width: $logo-width;
+        min-height: 48px;
         background: green;
+        cursor: pointer;
+    }
+
+    #nav-bar-items {
+        display: none;
+
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+    }
+
+    .nav-bar-item {
+        margin: 0 4px;
+        padding: 0 12px;
+    }
+
+    #nav-bar-booknow {
+        width: $logo-width;
+        text-align: right;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .nav-bar-item,
+    #nav-bar-booknow {
+        line-height: 42px;
+        text-transform: uppercase;
+        cursor: pointer;
+        @include common.white-text();
+    }
+
+    &.opaque {
+        background: white;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+
+        &.sticky {
+            background: white;
+        }
+
+        .nav-bar-item,
+        #nav-bar-booknow {
+            color: black;
+            text-shadow: none;
+        }
     }
 }

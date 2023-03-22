@@ -6,5 +6,6 @@ export interface IHeader {
         phone: string;
         email: string;
         address: string;
+        addressGmapLink: string;
     };
 }
