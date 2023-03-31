@@ -1,0 +1,50 @@
+.backdrop-shadow {
+    box-shadow: 0 5px 20px -5px rgb(0 0 0 / 10%);
+}
+
+#hero-text {
+    width: fit-content;
+    font-size: 48px;
+}
+
+@media only screen and (min-width: 600px) {
+    #hero-text {
+        font-size: 64px;
+    }
+}
+
+.navbar-collapse.collapsing,
+.navbar-collapse.collapse.show {
+    padding-top: 1em;
+}
+
+.navbar-collapse.collapsing .nav-item,
+.navbar-collapse.collapse.show .nav-item {
+    padding-left: 1.5em;
+}
+
+#bg-light {
+    background: #f2f4fb; 
+}
+
+.dimmed {
+    position: relative;
+}
+.dimmed::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.dimmed > div {
+    position: relative;
+}
+
+section.with-background {
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+}
