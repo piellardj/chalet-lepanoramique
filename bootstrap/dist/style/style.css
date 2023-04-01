@@ -1,5 +1,15 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    transition: background .15s, text .15s;
+}
+
 .backdrop-shadow {
-    box-shadow: 0 5px 20px -5px rgb(0 0 0 / 10%);
+    box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);
 }
 
 .navbar-brand {
