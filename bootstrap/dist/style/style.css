@@ -2,9 +2,33 @@
     box-shadow: 0 5px 20px -5px rgb(0 0 0 / 10%);
 }
 
+.navbar-brand {
+    font-size: 8px;
+}
+@media only screen and (min-width: 400px) {
+    .navbar-brand {
+        font-size: 10px;
+    }
+}
+
+.navbar-brand-small {
+    font-size: 1.4em;
+    line-height: 1em;
+}
+.navbar-brand-big {
+    font-size: 2em;
+    line-height: 1em;
+}
+
 #hero-text {
     width: fit-content;
-    font-size: 48px;
+    font-size: 32px;
+}
+
+@media only screen and (min-width: 380px) {
+    #hero-text {
+        font-size: 48px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
