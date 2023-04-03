@@ -11,452 +11,512 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="navbar-container d-flex flex-row justify-content-between align-items-center">
-                <a class="navbar-brand" href="#">
-                    <div class="navbar-brand-small">Chalet</div>
-                    <div class="navbar-brand-big">Le Panoramique</div>
-                </a>
-
-                <div id="navbar-items-container">
-                    <ul class="navbar-items-list">
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:scrollToElement('chalet')">Le
-                                chalet</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:scrollToElement('rooms')">Les
-                                chambres</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:scrollToElement('restaurant')">Le restaurant</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:scrollToElement('summer')">L'été</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:scrollToElement('winter')">L'hiver</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:scrollToElement('infos')">Infos
-                                utiles</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="navbar-booknow" class="rounded px-3">
-                    <a class="navbar-link" href="javascript:scrollToElement('booknow')">Réserver</a>
-                </div>
-
-                <button id="navbar-toggler" class="rounded" type="button" aria-label="Menu" onclick="navBar.toggle()">
-                    <span class="navbar-toggler-icon">
-                        <svg viewBox="0 0 7 7" width="24px" height="24px">
-                            <path d="M1 1h5M1 3h5M1 5h5" stroke-linecap="round"></path>
-                        </svg>
-                    </span>
-                    <span class="navbar-toggler-label">Menu</span>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <main>
+    <div id="temporary">
         <section id="site-hero" class="d-flex justify-content-between flex-column"
             style="background-image: url(&quot;images/header-background.jpg&quot;); background-position: 0% 0px;background-size:cover;min-height:100vh;"
             data-stellar-background-ratio="0.5">
             <div class="container text-white" style="padding-top:120px">
                 <div id="hero-text" class="mx-auto">
                     <span class="text-uppercase d-block"
+                    style="font-size:.4em;letter-spacing:.2em;padding-left:.1em;position: absolute;top:20px;left:50%;transform:translateX(-50%)">Site en construction</span>
+                </div>
+                
+                <div id="hero-text" class="mx-auto">
+                    <span class="text-uppercase d-block"
                         style="line-height: .5em;font-size:.4em;letter-spacing:.2em;padding-left:.1em">Bienvenue au
                         chalet</span>
                     <span class="heading d-block" style="line-height: 1em;font-size:1em">Le Panoramique</span>
                 </div>
+
             </div>
-            <div id="booknow" class="container py-5" style="max-width:1000px">
-                <div class="row rounded bg-light p-3 backdrop-shadow">
-                    <h4>Réservez en direct au meilleur prix</h4>
+    </div>
+    <div id="final" style="display:none">
+        <header>
+            <nav>
+                <div class="navbar-container d-flex flex-row justify-content-between align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <div class="navbar-brand-small">Chalet</div>
+                        <div class="navbar-brand-big">Le Panoramique</div>
+                    </a>
+
+                    <div id="navbar-items-container">
+                        <ul class="navbar-items-list">
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="javascript:scrollToElement('chalet')">Le
+                                    chalet</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="javascript:scrollToElement('rooms')">Les
+                                    chambres</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="javascript:scrollToElement('restaurant')">Le restaurant</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="javascript:scrollToElement('summer')">L'été</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="javascript:scrollToElement('winter')">L'hiver</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="javascript:scrollToElement('infos')">Infos
+                                    utiles</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="navbar-booknow" class="rounded px-3">
+                        <a class="navbar-link" href="javascript:scrollToElement('booknow')">Réserver</a>
+                    </div>
+
+                    <button id="navbar-toggler" class="rounded" type="button" aria-label="Menu"
+                        onclick="navBar.toggle()">
+                        <span class="navbar-toggler-icon">
+                            <svg viewBox="0 0 7 7" width="24px" height="24px">
+                                <path d="M1 1h5M1 3h5M1 5h5" stroke-linecap="round"></path>
+                            </svg>
+                        </span>
+                        <span class="navbar-toggler-label">Menu</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="site-hero" class="d-flex justify-content-between flex-column"
+                style="background-image: url(&quot;images/header-background.jpg&quot;); background-position: 0% 0px;background-size:cover;min-height:100vh;"
+                data-stellar-background-ratio="0.5">
+                <div class="container text-white" style="padding-top:120px">
+                    <div id="hero-text" class="mx-auto">
+                        <span class="text-uppercase d-block"
+                            style="line-height: .5em;font-size:.4em;letter-spacing:.2em;padding-left:.1em">Bienvenue au
+                            chalet</span>
+                        <span class="heading d-block" style="line-height: 1em;font-size:1em">Le Panoramique</span>
+                    </div>
+                </div>
+                <div id="booknow" class="container py-5" style="max-width:1000px">
+                    <div class="row rounded bg-light p-3 backdrop-shadow">
+                        <h4>Réservez en direct au meilleur prix</h4>
+                        <div>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                                        <label for="checkin_date" class="font-weight-bold text-black">Arrivée</label>
+                                        <div class="field-icon-wrap">
+                                            <div class="icon"><span class="icon-calendar"></span></div>
+                                            <input type="text" id="checkin_date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                                        <label for="checkout_date" class="font-weight-bold text-black">Départ</label>
+                                        <div class="field-icon-wrap">
+                                            <div class="icon"><span class="icon-calendar"></span></div>
+                                            <input type="text" id="checkout_date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3 mb-md-0">
+                                                <label for="adults" class="font-weight-bold text-black">Adultes</label>
+                                                <div class="field-icon-wrap">
+                                                    <select name="" id="adults" class="form-control">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4+</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3 mb-md-0">
+                                                <label for="children"
+                                                    class="font-weight-bold text-black">Enfants</label>
+                                                <div class="field-icon-wrap">
+                                                    <select name="" id="children" class="form-control">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4+</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 align-self-end text-end">
+                                        <button class="btn btn-primary btn-block text-white">Vérifier les
+                                            disponibilités</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="chalet" class="py-5 bg-light">
+                <div class="container">
+                    <h2>Le chalet</h2>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 mb-3">
+                            <img src="images/le-chalet.jpg" alt="Le chalet" class="img-fluid rounded">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>
+                                En arrivant à mon chalet vous serez tout d'abord instantanément surpris par sa splendide
+                                et
+                                grandiose vue sur les montagnes environnantes. Le chalet surplombe en effet son
+                                environnement et vous n'aurez de cesse d'admirer le panorama depuis sa grande terrasse
+                                ou
+                                votre balcon privé.
+                            </p>
+                            <p>
+                                Authentique chalet de charme, c'est aussi à l'intérieur que se joue la partition de
+                                votre
+                                bien-être. Je mets tout mon coeur à vous accueillir dans les meilleures conditions dès
+                                que
+                                vous franchisez la porte et j'aurai un réel plaisir à partager avec vous l'origine de
+                                tel
+                                objet, le toucher de telle matière ou encore l'histoire du producteur local choisi pour
+                                vous
+                                régaler.
+                            </p>
+                            <p>
+                                Je n'ai qu'une volonté et qu'un objectif: rendre votre séjour dans mon chalet
+                                inoubliable,
+                                votre expérience unique! Soyez les bienvenus.
+                            </p>
+                            <p>
+                                Olivier
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rooms" class="py-5">
+                <div class="container">
+                    <h2>Les chambres</h2>
+                    <div class="d-flex row my-4">
+                        <div class="col-12 col-md-6 custom-card">
+                            <div class="card-header">
+                                <img class="rounded" src="images/room-1.jpg" alt="Chambre 1" style="width:100%" />
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Chambres premium Panoramiques</div>
+                                <p>
+                                    Laissez moi tout d'abord vous présenter les chambres premium Panoramique. Elles font
+                                    toutes face au
+                                    panorama avec leur balcon privatif, équipées de lit King size pour une nuit au
+                                    confort
+                                    XXL
+                                    (divisible en 2 lits jumeaux), de plateaux courtoisie, de linge de lit en lin lavé,
+                                    de
+                                    toilettes
+                                    séparées et d'une salle de bain rénovée avec une sélection de produits d'accueil bio
+                                    et
+                                    français. La
+                                    décoration vous surprendra par son inspiration montagnarde.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 custom-card">
+                            <div class="card-header">
+                                <img class="rounded" src="images/room-3.jpg" alt="Chambre 3" style="width:100%" />
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Chambres économiques</div>
+                                <p>
+                                    J'ai voulu offrir la possibilité de séjourner chez moi à tous. Aussi j'ai créé des
+                                    chambres
+                                    économiques à tarif doux. Vous ne profiterez pas dans ces chambres d'un balcon, de
+                                    linge
+                                    de lit en
+                                    lin ou encore de plateau de courtoisie. Soyez cependant rassuré, votre confort sera
+                                    malgré tout très
+                                    agréable dans ces chambres éco!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="restaurant" class="py-5 dimmed with-background"
+                style="background-image: url(&quot;images/restaurant.jpg&quot;)">
+                <div class="container text-light">
+                    <h2>Le restaurant</h2>
+                    <div class="d-flex row">
+                        <div class="col-12 col-lg-6 custom-card">
+                            <div class="card-title">La salle</div>
+                            <div class="card-body">
+                                <p>
+                                    Une belle salle intimiste vous attend pour vous régaler d'un menu du jour cuisiné
+                                    avec
+                                    exclusivement
+                                    des produits frais, locaux, de saison, rigoureusement sélectionné pour leur qualité
+                                    car
+                                    au
+                                    chalet,
+                                    tout est 100% fait maison. J'aime la cuisine et les bonnes choses! Je vous propose
+                                    ainsi
+                                    une
+                                    formule
+                                    demi-pension à tarif préférentiel si vous la sélectionnez dès votre réservation. Et
+                                    si
+                                    l'envie
+                                    de «
+                                    fromage fondu » vous rattrape, vous aurez bien entendu la joie de partager une
+                                    raclette
+                                    à la
+                                    bougie
+                                    ou encore une fondue iséroise, une croziflette…. Le restaurant n'est ouvert que le
+                                    soir
+                                    pour le
+                                    diner.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 custom-card">
+                            <div class="card-title">Le bar</div>
+                            <div class="card-body">
+                                <p>
+                                    Le bar vous permettra de découvrir des bières locales mais aussi des alcools
+                                    artisanaux ainsi
+                                    qu'une sélection de limonade, jus de fruit, cola ou tonic!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="summer" class="py-5">
+                <div class="container">
                     <div>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                                    <label for="checkin_date" class="font-weight-bold text-black">Arrivée</label>
-                                    <div class="field-icon-wrap">
-                                        <div class="icon"><span class="icon-calendar"></span></div>
-                                        <input type="text" id="checkin_date" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                                    <label for="checkout_date" class="font-weight-bold text-black">Départ</label>
-                                    <div class="field-icon-wrap">
-                                        <div class="icon"><span class="icon-calendar"></span></div>
-                                        <input type="text" id="checkout_date" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3 mb-md-0">
-                                            <label for="adults" class="font-weight-bold text-black">Adultes</label>
-                                            <div class="field-icon-wrap">
-                                                <select name="" id="adults" class="form-control">
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4+</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3 mb-md-0">
-                                            <label for="children" class="font-weight-bold text-black">Enfants</label>
-                                            <div class="field-icon-wrap">
-                                                <select name="" id="children" class="form-control">
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4+</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3 align-self-end text-end">
-                                    <button class="btn btn-primary btn-block text-white">Vérifier les
-                                        disponibilités</button>
+                        <h2>L'été</h2>
+                        <div class="d-flex row">
+                            <div class="col-12 col-lg-6 col-xxl-4 custom-card">
+                                <div class="card-title">Cyclotourisme</div>
+                                <div class="card-body">
+                                    <p>
+                                        Paradis des cyclotouristes, ils pourront s'exercer sur les routes empruntées par
+                                        le
+                                        Tour
+                                        de France ainsi que la prestigieuse course de la Marmotte (le col du Glandon, le
+                                        col
+                                        du
+                                        Télégraphe, le col du Lautaret, le col du Galibier...), sans oublier les
+                                        fameuses
+                                        boucles de l'Alpe d'Huez.
+                                    </p>
                                 </div>
                             </div>
-                        </form>
-                    </div>
 
-
-                </div>
-            </div>
-        </section>
-
-        <section id="chalet" class="py-5 bg-light">
-            <div class="container">
-                <h2>Le chalet</h2>
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 mb-3">
-                        <img src="images/le-chalet.jpg" alt="Le chalet" class="img-fluid rounded">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <p>
-                            En arrivant à mon chalet vous serez tout d'abord instantanément surpris par sa splendide et
-                            grandiose vue sur les montagnes environnantes. Le chalet surplombe en effet son
-                            environnement et vous n'aurez de cesse d'admirer le panorama depuis sa grande terrasse ou
-                            votre balcon privé.
-                        </p>
-                        <p>
-                            Authentique chalet de charme, c'est aussi à l'intérieur que se joue la partition de votre
-                            bien-être. Je mets tout mon coeur à vous accueillir dans les meilleures conditions dès que
-                            vous franchisez la porte et j'aurai un réel plaisir à partager avec vous l'origine de tel
-                            objet, le toucher de telle matière ou encore l'histoire du producteur local choisi pour vous
-                            régaler.
-                        </p>
-                        <p>
-                            Je n'ai qu'une volonté et qu'un objectif: rendre votre séjour dans mon chalet inoubliable,
-                            votre expérience unique! Soyez les bienvenus.
-                        </p>
-                        <p>
-                            Olivier
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="rooms" class="py-5">
-            <div class="container">
-                <h2>Les chambres</h2>
-                <div class="d-flex row my-4">
-                    <div class="col-12 col-md-6 custom-card">
-                        <div class="card-header">
-                            <img class="rounded" src="images/room-1.jpg" alt="Chambre 1" style="width:100%" />
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Chambres premium Panoramiques</div>
-                            <p>
-                                Laissez moi tout d'abord vous présenter les chambres premium Panoramique. Elles font
-                                toutes face au
-                                panorama avec leur balcon privatif, équipées de lit King size pour une nuit au confort
-                                XXL
-                                (divisible en 2 lits jumeaux), de plateaux courtoisie, de linge de lit en lin lavé, de
-                                toilettes
-                                séparées et d'une salle de bain rénovée avec une sélection de produits d'accueil bio et
-                                français. La
-                                décoration vous surprendra par son inspiration montagnarde.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 custom-card">
-                        <div class="card-header">
-                            <img class="rounded" src="images/room-3.jpg" alt="Chambre 3" style="width:100%" />
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Chambres économiques</div>
-                            <p>
-                                J'ai voulu offrir la possibilité de séjourner chez moi à tous. Aussi j'ai créé des
-                                chambres
-                                économiques à tarif doux. Vous ne profiterez pas dans ces chambres d'un balcon, de linge
-                                de lit en
-                                lin ou encore de plateau de courtoisie. Soyez cependant rassuré, votre confort sera
-                                malgré tout très
-                                agréable dans ces chambres éco!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="restaurant" class="py-5 dimmed with-background"
-            style="background-image: url(&quot;images/restaurant.jpg&quot;)">
-            <div class="container text-light">
-                <h2>Le restaurant</h2>
-                <div class="d-flex row">
-                    <div class="col-12 col-lg-6 custom-card">
-                        <div class="card-title">La salle</div>
-                        <div class="card-body">
-                            <p>
-                                Une belle salle intimiste vous attend pour vous régaler d'un menu du jour cuisiné avec
-                                exclusivement
-                                des produits frais, locaux, de saison, rigoureusement sélectionné pour leur qualité car
-                                au
-                                chalet,
-                                tout est 100% fait maison. J'aime la cuisine et les bonnes choses! Je vous propose ainsi
-                                une
-                                formule
-                                demi-pension à tarif préférentiel si vous la sélectionnez dès votre réservation. Et si
-                                l'envie
-                                de «
-                                fromage fondu » vous rattrape, vous aurez bien entendu la joie de partager une raclette
-                                à la
-                                bougie
-                                ou encore une fondue iséroise, une croziflette…. Le restaurant n'est ouvert que le soir
-                                pour le
-                                diner.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 custom-card">
-                        <div class="card-title">Le bar</div>
-                        <div class="card-body">
-                            <p>
-                                Le bar vous permettra de découvrir des bières locales mais aussi des alcools
-                                artisanaux ainsi
-                                qu'une sélection de limonade, jus de fruit, cola ou tonic!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="summer" class="py-5">
-            <div class="container">
-                <div>
-                    <h2>L'été</h2>
-                    <div class="d-flex row">
-                        <div class="col-12 col-lg-6 col-xxl-4 custom-card">
-                            <div class="card-title">Cyclotourisme</div>
-                            <div class="card-body">
-                                <p>
-                                    Paradis des cyclotouristes, ils pourront s'exercer sur les routes empruntées par le
-                                    Tour
-                                    de France ainsi que la prestigieuse course de la Marmotte (le col du Glandon, le col
-                                    du
-                                    Télégraphe, le col du Lautaret, le col du Galibier...), sans oublier les fameuses
-                                    boucles de l'Alpe d'Huez.
-                                </p>
+                            <div class="col-12 col-lg-6 col-xxl-4 custom-card">
+                                <div class="card-title">VTT</div>
+                                <div class="card-body">
+                                    <p>
+                                        Rejoignez la boucle de 36 kms sur le Plateau d'Emparis, ou par le Col de Sarenne
+                                        grimpez
+                                        à l'Alpe d'Huez et faites le tour de La Garde. Mais aussi le chemin des
+                                        Demoiselles
+                                        des
+                                        2 Alpes ou la descente du Pic Blanc de l'Alpe d'Huez (montée par télécabine), le
+                                        Mondial
+                                        du VTT aux Deux Alpes, la nouvelle descente spectaculaire des Deux Alpes (3400m)
+                                        à
+                                        Venosc (800m)...
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 col-lg-6 col-xxl-4 custom-card">
-                            <div class="card-title">VTT</div>
-                            <div class="card-body">
-                                <p>
-                                    Rejoignez la boucle de 36 kms sur le Plateau d'Emparis, ou par le Col de Sarenne
-                                    grimpez
-                                    à l'Alpe d'Huez et faites le tour de La Garde. Mais aussi le chemin des Demoiselles
-                                    des
-                                    2 Alpes ou la descente du Pic Blanc de l'Alpe d'Huez (montée par télécabine), le
-                                    Mondial
-                                    du VTT aux Deux Alpes, la nouvelle descente spectaculaire des Deux Alpes (3400m) à
-                                    Venosc (800m)...
-                                </p>
+                            <div class="col-12 col-lg-6 col-xxl-4 custom-card">
+                                <div class="card-title">Randonnées et balades</div>
+                                <div class="card-body">
+                                    <p>
+                                        Les randonneurs, qu'ils soient à cheval ou à pied, pourront profiter des lieux
+                                        se
+                                        trouvant à proximité de l'hôtel : le Plateau d'Emparis, la Croix de Cassini, le
+                                        barrage
+                                        du Chambon, le Lac des Quirlies, le Pic du Mas de la Grave… et tant d'autres!
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 col-lg-6 col-xxl-4 custom-card">
-                            <div class="card-title">Randonnées et balades</div>
-                            <div class="card-body">
-                                <p>
-                                    Les randonneurs, qu'ils soient à cheval ou à pied, pourront profiter des lieux se
-                                    trouvant à proximité de l'hôtel : le Plateau d'Emparis, la Croix de Cassini, le
-                                    barrage
-                                    du Chambon, le Lac des Quirlies, le Pic du Mas de la Grave… et tant d'autres!
-                                </p>
+
+                            <div class="col-12 col-lg-6 col-xxl-4 custom-card">
+                                <div class="card-title">Alpinisme</div>
+                                <div class="card-body">
+                                    <p>
+                                        Profitez des sites d'escalade du Dauphiné et des Deux Alpes, de la Via Ferrata
+                                        au
+                                        Col de
+                                        Sarenne.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
 
-                        <div class="col-12 col-lg-6 col-xxl-4 custom-card">
-                            <div class="card-title">Alpinisme</div>
-                            <div class="card-body">
-                                <p>
-                                    Profitez des sites d'escalade du Dauphiné et des Deux Alpes, de la Via Ferrata au
-                                    Col de
-                                    Sarenne.
-                                </p>
+                            <div class="col-12 col-lg-6 col-xxl-4 custom-card">
+                                <div class="card-title">Golf</div>
+                                <div class="card-body">
+                                    <p>
+                                        Pour les amateurs de golf, profitez du Driving Range aux 2 Alpes, et du parcours
+                                        de
+                                        18
+                                        trous à Uriage.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-
-                        <div class="col-12 col-lg-6 col-xxl-4 custom-card">
-                            <div class="card-title">Golf</div>
-                            <div class="card-body">
-                                <p>
-                                    Pour les amateurs de golf, profitez du Driving Range aux 2 Alpes, et du parcours de
-                                    18
-                                    trous à Uriage.
-                                </p>
+                            <div class="col-12 col-lg-6 col-xxl-4 custom-card">
+                                <div class="card-title">Ski d'été</div>
+                                <div class="card-body">
+                                    <p>
+                                        Pour les amateurs de golf, profitez du Driving Range aux 2 Alpes, et du parcours
+                                        de
+                                        18
+                                        trous à Uriage.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 col-lg-6 col-xxl-4 custom-card">
-                            <div class="card-title">Ski d'été</div>
-                            <div class="card-body">
-                                <p>
-                                    Pour les amateurs de golf, profitez du Driving Range aux 2 Alpes, et du parcours de
-                                    18
-                                    trous à Uriage.
-                                </p>
+                            <div class="col-12 col-lg-6 col-xxl-4 custom-card">
+                                <div class="card-title">Golf</div>
+                                <div class="card-body">
+                                    <p>
+                                        Les Skieurs ne seront pas en reste, puisque, même en été, les 2 Alpes vous
+                                        accueillent
+                                        sur le Glacier du Dôme de la Lauze où même les débutants trouveront des pistes
+                                        faciles.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 col-lg-6 col-xxl-4 custom-card">
-                            <div class="card-title">Golf</div>
-                            <div class="card-body">
-                                <p>
-                                    Les Skieurs ne seront pas en reste, puisque, même en été, les 2 Alpes vous
-                                    accueillent
-                                    sur le Glacier du Dôme de la Lauze où même les débutants trouveront des pistes
-                                    faciles.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6 col-xxl-4 custom-card">
-                            <div class="card-title">Et tant d'autres activités montagne</div>
-                            <div class="card-body">
-                                <p>
-                                    À St. Christophe, la base nautique Eaux Vives vous proposera de faire du raft ou de
-                                    l'hydro-speed. Profitez d'une vue exceptionnelle avec la montée en télécabine à
-                                    3500m
-                                    d'altitude au glacier de La Grave/La Meije...
-                                </p>
+                            <div class="col-12 col-lg-6 col-xxl-4 custom-card">
+                                <div class="card-title">Et tant d'autres activités montagne</div>
+                                <div class="card-body">
+                                    <p>
+                                        À St. Christophe, la base nautique Eaux Vives vous proposera de faire du raft ou
+                                        de
+                                        l'hydro-speed. Profitez d'une vue exceptionnelle avec la montée en télécabine à
+                                        3500m
+                                        d'altitude au glacier de La Grave/La Meije...
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="winter" class="py-5 dimmed with-background"
-            style="background-image: url(&quot;images/winter.jpg&quot;)">
-            <div class="container text-light">
-                <div>
-                    <h2>L'hiver</h2>
-                    <div class="d-flex row">
-                        <div class="col-12 col-lg-6 custom-card">
-                            <div class="card-title">Le chalet est situé au milieu de 3 domaines de skiables prestigieux
-                                qui sont :</div>
-                            <div class="card-body">
-                                <p>
-                                <ul style="text-align:left">
-                                    <li>Les Deux Alpes à 3km (200kms de pistes, 2500m de dénivelé grâce au glacier, un
-                                        enneigement
-                                        permanent)</li>
-                                    <li>L'Alpe d'Huez à 15km (220kms de pistes, 2200m de dénivelé avec la descente de 16
-                                        km du
-                                        Pic Blanc par Sarenne)</li>
-                                    <li>La Grave-La Meije à 15km avec son sommet à 3983m d'altitude</li>
-                                </ul>
-                                </p>
-                                <p>
-                                    De plus, vous trouverez le domaine de Serre Chevalier à environ 40 minutes de route.
-                                </p>
-                                <p>
-                                    Egalement possible la Cascade de glace, les balades en raquettes, le ski de
-                                    randonnée, le
-                                    ski de
-                                    fond, le ski hors piste (À la Grave/La Meije ou la descente du grand Sablat à Alpes
-                                    d'Huez/Clavans)… tout est à proximité.
-                                </p>
+            <section id="winter" class="py-5 dimmed with-background"
+                style="background-image: url(&quot;images/winter.jpg&quot;)">
+                <div class="container text-light">
+                    <div>
+                        <h2>L'hiver</h2>
+                        <div class="d-flex row">
+                            <div class="col-12 col-lg-6 custom-card">
+                                <div class="card-title">Le chalet est situé au milieu de 3 domaines de skiables
+                                    prestigieux
+                                    qui sont :</div>
+                                <div class="card-body">
+                                    <p>
+                                    <ul style="text-align:left">
+                                        <li>Les Deux Alpes à 3km (200kms de pistes, 2500m de dénivelé grâce au glacier,
+                                            un
+                                            enneigement
+                                            permanent)</li>
+                                        <li>L'Alpe d'Huez à 15km (220kms de pistes, 2200m de dénivelé avec la descente
+                                            de 16
+                                            km du
+                                            Pic Blanc par Sarenne)</li>
+                                        <li>La Grave-La Meije à 15km avec son sommet à 3983m d'altitude</li>
+                                    </ul>
+                                    </p>
+                                    <p>
+                                        De plus, vous trouverez le domaine de Serre Chevalier à environ 40 minutes de
+                                        route.
+                                    </p>
+                                    <p>
+                                        Egalement possible la Cascade de glace, les balades en raquettes, le ski de
+                                        randonnée, le
+                                        ski de
+                                        fond, le ski hors piste (À la Grave/La Meije ou la descente du grand Sablat à
+                                        Alpes
+                                        d'Huez/Clavans)… tout est à proximité.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 col-lg-6 custom-card">
-                            <div class="card-title">Les atouts d'un séjour de ski au Panoramique :</div>
-                            <div class="card-body">
-                                <p>
-                                <ul style="text-align:left">
-                                    <li>Des prix plus attractifs qu'un hôtel*** au pied des pistes pour un service de
-                                        qualité et
-                                        un
-                                        accueil chaleureux, loin de « l'industrie du ski en station"</li>
-                                    <li>L'occasion de découvrir 4 domaines skiables d'importance: Les Deux Alpes, L'Alpe
-                                        d'Huez,
-                                        La
-                                        Grave, et Serre Chevalier.</li>
-                                    <li>Des séjours flexibles que ce soit pour un week-end, pour quelques jours ou
-                                        plusieurs
-                                        semaines,
-                                        choisissez le jour et l'heure de votre arrivée.</li>
-                                    <li>Le service Skipass : vous pourrez acheter vos forfaits journaliers à des tarifs
-                                        remisés.
-                                    </li>
-                                </ul>
-                                </p>
+                            <div class="col-12 col-lg-6 custom-card">
+                                <div class="card-title">Les atouts d'un séjour de ski au Panoramique :</div>
+                                <div class="card-body">
+                                    <p>
+                                    <ul style="text-align:left">
+                                        <li>Des prix plus attractifs qu'un hôtel*** au pied des pistes pour un service
+                                            de
+                                            qualité et
+                                            un
+                                            accueil chaleureux, loin de « l'industrie du ski en station"</li>
+                                        <li>L'occasion de découvrir 4 domaines skiables d'importance: Les Deux Alpes,
+                                            L'Alpe
+                                            d'Huez,
+                                            La
+                                            Grave, et Serre Chevalier.</li>
+                                        <li>Des séjours flexibles que ce soit pour un week-end, pour quelques jours ou
+                                            plusieurs
+                                            semaines,
+                                            choisissez le jour et l'heure de votre arrivée.</li>
+                                        <li>Le service Skipass : vous pourrez acheter vos forfaits journaliers à des
+                                            tarifs
+                                            remisés.
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="infos" class="py-5 bg-light">
-            <div class="container">
-                <h2>Informations utiles</h2>
-                <div class="row mt-4 text-left">
-                    <div class="col-12 col-md-6">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.6986852073487!2d6.144188361692429!3d45.05133605999382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a14f9ab5cfa9f%3A0x715585d673b12e46!2sLogis%20H%C3%B4tel%20le%20Panoramique!5e0!3m2!1sfr!2sfr!4v1680296381957!5m2!1sfr!2sfr"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            class="col-12 rounded" title="Carte" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div>
-                            <span class="coord-name">Téléphone:</span>
-                            <a class="coord-value" href="tel:01 02 03 04 05">01 02 03 04 05</a>
+            <section id="infos" class="py-5 bg-light">
+                <div class="container">
+                    <h2>Informations utiles</h2>
+                    <div class="row mt-4 text-left">
+                        <div class="col-12 col-md-6">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.6986852073487!2d6.144188361692429!3d45.05133605999382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a14f9ab5cfa9f%3A0x715585d673b12e46!2sLogis%20H%C3%B4tel%20le%20Panoramique!5e0!3m2!1sfr!2sfr!4v1680296381957!5m2!1sfr!2sfr"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                class="col-12 rounded" title="Carte"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div>
-                            <span class="coord-name">Email:</span>
-                            <a class="coord-value" href="mailto:monemail@domaine.fr">monemail@domaine.fr</a>
-                        </div>
-                        <div>
-                            <span class="coord-name">Adresse:</span>
-                            <a class="coord-value" href="https://www.google.com/maps/search/?api=1&query=panoramique%20mizoen">chalet MIZOEN</a>
+                        <div class="col-12 col-md-6">
+                            <div>
+                                <span class="coord-name">Téléphone:</span>
+                                <a class="coord-value" href="tel:01 02 03 04 05">01 02 03 04 05</a>
+                            </div>
+                            <div>
+                                <span class="coord-name">Email:</span>
+                                <a class="coord-value" href="mailto:monemail@domaine.fr">monemail@domaine.fr</a>
+                            </div>
+                            <div>
+                                <span class="coord-name">Adresse:</span>
+                                <a class="coord-value"
+                                    href="https://www.google.com/maps/search/?api=1&query=panoramique%20mizoen">chalet
+                                    MIZOEN</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer class="pt-5 pb-1 bg-dark color-light">
-        <p class="text-center text-light">© 2023 Company, Inc</p>
-    </footer>
-
+            </section>
+        </main>
+        <footer class="pt-5 pb-1 bg-dark color-light">
+            <p class="text-center text-light">© 2023 Company, Inc</p>
+        </footer>
+    </div>
     <script src="5.2.3/bootstrap.bundle.min.js"></script>
     <script src="script/page.js"></script>
 </body>
