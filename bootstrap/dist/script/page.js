@@ -1,21 +1,49 @@
-(function initializeNavBar() {
-    const navbar = document.querySelector("header nav");
+const navBar = (function initializeNavBar() {
+    const navbarElement = document.querySelector("header nav");
+
     function updateNavbarStyle() {
         if (window.scrollY > 0) {
-            navbar.classList.remove("bg-transparent");
-            navbar.classList.remove("navbar-dark");
-            navbar.classList.add("navbar-light");
-            navbar.classList.add("backdrop-shadow");
-            navbar.classList.add("bg-light");
+            navbarElement.classList.add("scrolled");
         } else {
-            navbar.classList.add("bg-transparent");
-            navbar.classList.add("navbar-dark");
-            navbar.classList.remove("backdrop-shadow");
+            navbarElement.classList.remove("scrolled");
         }
     }
     window.addEventListener("scroll", updateNavbarStyle);
     window.addEventListener("resize", updateNavbarStyle);
     updateNavbarStyle();
+
+    function isExpanded() {
+        return navbarElement.classList.contains("expanded");
+    }
+    function expandNavbar() {
+        navbarElement.classList.add("expanded");
+    }
+    function closeNavbar() {
+        navbarElement.classList.remove("expanded");
+    }
+
+    function toggle() {
+        if (isExpanded()) {
+            closeNavbar();
+        } else {
+            expandNavbar();
+        }
+    };
+    document.addEventListener("click", (event) => {
+        let element = event.target;
+        while (element) {
+            if (element === navbarElement) {
+                return;
+            }
+            element = element.parentNode;
+        }
+        closeNavbar();
+    });
+
+    return {
+        closeNavbar,
+        toggle,
+    };
 })();
 
 (function initializeHero() {
@@ -31,19 +59,6 @@
     updateParallax();
 })();
 
-function closeNavbar() {
-    const collapseElement = document.querySelector(".navbar-collapse");
-    if (collapseElement.classList.contains("show")) {
-        const collapse = new bootstrap.Collapse(collapseElement);
-        collapse.hide();
-    }
-}
-document.addEventListener("click", (event) => {
-    if (!event.target.closest("nav")) {
-        closeNavbar();
-    }
-});
-
 function scrollToElement(id /* string */) /* false */ {
     const target = document.getElementById(id);
 
@@ -56,6 +71,5 @@ function scrollToElement(id /* string */) /* false */ {
         left: 0,
         behavior: "smooth",
     });
-    // closeNavbar();
-    // return false;
+    navBar.closeNavbar();
 }

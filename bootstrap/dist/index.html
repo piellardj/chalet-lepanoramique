@@ -12,58 +12,50 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark" aria-label="Fifth navbar example">
-            <div class="container-md">
-                <a class="navbar-brand col-5 col-lg-3" href="#">
-                    <div class="navbar-brand-small">Hôtel</div>
+        <nav>
+            <div class="navbar-container d-flex flex-row justify-content-between align-items-center">
+                <a class="navbar-brand" href="#">
+                    <div class="navbar-brand-small">Chalet</div>
                     <div class="navbar-brand-big">Le Panoramique</div>
                 </a>
 
-                <div class="collapse navbar-collapse" id="navbar-items">
-                    <ul class="navbar-nav me-auto mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                onclick="scrollToElement('chalet')">Le
+                <div id="navbar-items-container">
+                    <ul class="navbar-items-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="javascript:scrollToElement('chalet')">Le
                                 chalet</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                onclick="scrollToElement('rooms')">Les
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="javascript:scrollToElement('rooms')">Les
                                 chambres</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                onclick="scrollToElement('restaurant')">Le restaurant</a>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="javascript:scrollToElement('restaurant')">Le restaurant</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                onclick="scrollToElement('summer')">L'été</a>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="javascript:scrollToElement('summer')">L'été</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                onclick="scrollToElement('winter')">L'hiver</a>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="javascript:scrollToElement('winter')">L'hiver</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                onclick="scrollToElement('infos')">Infos
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="javascript:scrollToElement('infos')">Infos
                                 utiles</a>
                         </li>
                     </ul>
                 </div>
 
-                <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item rounded" style="border: 1px solid var(--bs-navbar-active-color);">
-                        <a class="nav-link active  px-3" aria-current="page" href="#"
-                            onclick="scrollToElement('booknow')">
-                            <span class="font-weight-bold text-uppercase"
-                                style="font-weight:bold!important">Réserver</span>
-                        </a>
-                    </li>
-                </ul>
+                <div id="navbar-booknow" class="rounded px-3">
+                        <a class="navbar-link" href="javascript:scrollToElement('booknow')">Réserver</a>
+                </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
-                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button id="navbar-toggler" class="rounded" type="button" aria-label="Menu" onclick="navBar.toggle()">
+                    <span class="navbar-toggler-icon">
+                        <svg viewBox="0 0 7 7" width="24px" height="24px">
+                            <path d="M1 1h5M1 3h5M1 5h5" stroke-linecap="round"></path>
+                        </svg>
+                    </span>
+                    <span class="navbar-toggler-label">Menu</span>
                 </button>
             </div>
         </nav>
@@ -73,10 +65,10 @@
         <section id="site-hero" class="d-flex justify-content-between flex-column"
             style="background-image: url(&quot;images/header-background.jpg&quot;); background-position: 0% 0px;background-size:cover;min-height:100vh;"
             data-stellar-background-ratio="0.5">
-            <div class="container text-white" style="padding-top:128px">
+            <div class="container text-white" style="padding-top:120px">
                 <div id="hero-text" class="mx-auto">
                     <span class="text-uppercase d-block"
-                        style="line-height: .2em;font-size:.2em;letter-spacing:.2em;padding-left:.3em">Bienvenue au
+                        style="line-height: .5em;font-size:.4em;letter-spacing:.2em;padding-left:.1em">Bienvenue au
                         chalet</span>
                     <span class="heading d-block" style="line-height: 1em;font-size:1em">Le Panoramique</span>
                 </div>
@@ -128,7 +120,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3 align-self-end text-end">
-                                    <button class="btn btn-primary btn-block text-white">Vérifier les disponibilités</button>
+                                    <button class="btn btn-primary btn-block text-white">Vérifier les
+                                        disponibilités</button>
                                 </div>
                             </div>
                         </form>
@@ -160,30 +153,24 @@
 
         <section id="rooms" class="py-5">
             <div class="container text-center">
-                <h2>Les chambres</h2>
+                <h2>Nos chambres</h2>
                 <div>
                     Les chambres sont drôlement chouettes. Les chambres sont drôlement chouettes. Les chambres sont
                     drôlement chouettes. Les chambres sont drôlement chouettes. Les chambres sont drôlement chouettes.
                     Les chambres sont drôlement chouettes.
                 </div>
                 <div class="container-fluid row m-4">
-                    <div class="col-6 col-md-4 p-2">
-                        <div>
-                            <img class="rounded" src="images/room-1.jpg" alt="Chambre 1" style="width:100%" />
-                        </div>
-                        <div>Chambre 1</div>
-                    </div>
-                    <div class="col-6 col-md-4 p-2">
-                        <div>
-                            <img class="rounded" src="images/room-2.jpg" alt="Chambre 2" style="width:100%" />
-                        </div>
-                        <div>Chambre 2</div>
-                    </div>
-                    <div class="col-6 col-md-4 p-2">
+                    <div class="col-12 col-md-6 p-2">
                         <div>
                             <img class="rounded" src="images/room-3.jpg" alt="Chambre 3" style="width:100%" />
                         </div>
-                        <div>Chambre 3</div>
+                        <div>Chambre Standard</div>
+                    </div>
+                    <div class="col-12 col-md-6 p-2">
+                        <div>
+                            <img class="rounded" src="images/room-1.jpg" alt="Chambre 1" style="width:100%" />
+                        </div>
+                        <div>Chambre Premium</div>
                     </div>
                 </div>
             </div>
@@ -194,9 +181,10 @@
             <div class="container text-center text-light">
                 <h2>Le restaurant</h2>
                 <div>
-                    Les chambres sont drôlement chouettes. Les chambres sont drôlement chouettes. Les chambres sont
-                    drôlement chouettes. Les chambres sont drôlement chouettes. Les chambres sont drôlement chouettes.
-                    Les chambres sont drôlement chouettes.
+                    Le restaurant est drôlement chouette. Le restaurant est drôlement chouette. Le restaurant est
+                    drôlement chouette. Le restaurant est drôlement chouette. Le restaurant est drôlement chouette. Le
+                    restaurant est drôlement chouette. Le restaurant est drôlement chouette. Le restaurant est drôlement
+                    chouette. Le restaurant est drôlement chouette.
                 </div>
             </div>
         </section>
@@ -206,10 +194,10 @@
                 <div>
                     <h2>L'été</h2>
                     <div>
-                        Les chambres sont drôlement chouettes. Les chambres sont drôlement chouettes. Les chambres sont
-                        drôlement chouettes. Les chambres sont drôlement chouettes. Les chambres sont drôlement
-                        chouettes.
-                        Les chambres sont drôlement chouettes.
+                        L'été, c'est drôlement chouette. L'été, c'est drôlement chouette. L'été, c'est drôlement
+                        chouette. L'été, c'est drôlement chouette. L'été, c'est drôlement chouette. L'été, c'est
+                        drôlement chouette. L'été, c'est drôlement chouette. L'été, c'est drôlement chouette. L'été,
+                        c'est drôlement chouette.
                     </div>
                 </div>
             </div>
@@ -221,10 +209,9 @@
                 <div>
                     <h2>L'hiver</h2>
                     <div>
-                        Les chambres sont drôlement chouettes. Les chambres sont drôlement chouettes. Les chambres sont
-                        drôlement chouettes. Les chambres sont drôlement chouettes. Les chambres sont drôlement
-                        chouettes.
-                        Les chambres sont drôlement chouettes.
+                        L'hiver, c'est drôlement chouette. L'hiver, c'est drôlement chouette. L'hiver, c'est drôlement
+                        chouette. L'hiver, c'est drôlement chouette. L'hiver, c'est drôlement chouette. L'hiver, c'est
+                        drôlement chouette. L'hiver, c'est drôlement chouette. L'hiver, c'est drôlement chouette.
                     </div>
                 </div>
             </div>
