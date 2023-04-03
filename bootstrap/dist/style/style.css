@@ -163,7 +163,7 @@ nav #navbar-booknow {
     user-select: none;
 }
 
-@media only screen and (min-width: 380px) {
+@media only screen and (min-width: 400px) {
     #hero-text {
         font-size: 48px;
     }
