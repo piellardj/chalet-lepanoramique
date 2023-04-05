@@ -18,8 +18,7 @@
                     Site en construction
                 </div>
                 <div class="text-uppercase d-block" style="line-height:1em;font-size:.3em;letter-spacing:.2em;padding-left:.1em">
-                    Bienvenue au
-                    chalet
+                    Bienvenue au chalet
                 </div>
                 <div class="heading d-block" style="line-height: 1em;font-size:1em">
                     Le Panoramique
@@ -34,7 +33,7 @@
         <header>
             <nav>
                 <div class="navbar-container d-flex flex-row justify-content-between align-items-center">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="javascript:scrollToElement('site-hero')">
                         <div class="navbar-brand-small">Chalet</div>
                         <div class="navbar-brand-big">Le Panoramique</div>
                     </a>
@@ -42,12 +41,10 @@
                     <div id="navbar-items-container">
                         <ul class="navbar-items-list">
                             <li class="navbar-item">
-                                <a class="navbar-link" href="javascript:scrollToElement('chalet')">Le
-                                    chalet</a>
+                                <a class="navbar-link" href="javascript:scrollToElement('chalet')">Le chalet</a>
                             </li>
                             <li class="navbar-item">
-                                <a class="navbar-link" href="javascript:scrollToElement('rooms')">Les
-                                    chambres</a>
+                                <a class="navbar-link" href="javascript:scrollToElement('rooms')">Les chambres</a>
                             </li>
                             <li class="navbar-item">
                                 <a class="navbar-link" href="javascript:scrollToElement('restaurant')">Le restaurant</a>
@@ -71,8 +68,12 @@
 
                     <button id="navbar-toggler" class="rounded" type="button" aria-label="Menu" onclick="navBar.toggle()">
                         <span class="navbar-toggler-icon">
-                            <svg viewBox="0 0 7 7" width="24px" height="24px">
-                                <path d="M1 1h5M1 3h5M1 5h5" stroke-linecap="round"></path>
+                            <svg class="menu-icon" viewBox="0 0 7 7" width="24px" height="24px">
+                                <!-- <g stroke-linecap="round"> -->
+                                    <path class="menu-icon-upper" d="M1 1h5" />
+                                    <path class="menu-icon-middle" d="M1 3h5" />
+                                    <path class="menu-icon-lower" d="M1 5h5" />
+                                <!-- </g> -->
                             </svg>
                         </span>
                         <span class="navbar-toggler-label">Menu</span>
@@ -85,8 +86,7 @@
             <section id="site-hero" class="d-flex justify-content-between flex-column" style="background-image: url(&quot;images/header-background.jpg&quot;); background-position: center 0px;background-size:cover;min-height:100vh;">
                 <div id="hero-text" class="container text-white d-flex flex-column" style="padding-top:100px">
                     <div class="text-uppercase d-block" style="line-height:1em;font-size:.3em;letter-spacing:.2em;padding-left:.1em">
-                        Bienvenue au
-                        chalet
+                        Bienvenue au chalet
                     </div>
                     <div class="heading d-block" style="line-height: 1em;font-size:1em">
                         Le Panoramique

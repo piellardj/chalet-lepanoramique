@@ -237,3 +237,19 @@ section {
     color: black !important;
     line-height: 1.5em;
 }
+
+svg.menu-icon {
+    stroke-linecap: round;
+}
+svg.menu-icon path {
+    transition: .15s;
+}
+nav.expanded svg.menu-icon path.menu-icon-upper {
+    transform: translate(1.7px,1px) rotate(45deg) translate(-1px,-1px);;
+}
+nav.expanded svg.menu-icon path.menu-icon-middle {
+    opacity: 0;
+}
+nav.expanded svg.menu-icon path.menu-icon-lower {
+    transform: translate(1.7px,4.6px) rotate(-45deg) translate(-1px,-5px);;
+}
