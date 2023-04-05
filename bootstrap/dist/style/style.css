@@ -131,6 +131,7 @@ nav #navbar-booknow {
         box-shadow: none;
         opacity: 1;
         transform: none !important;
+        backdrop-filter: none;
     }
 
     nav #navbar-items-container .navbar-items-list {
