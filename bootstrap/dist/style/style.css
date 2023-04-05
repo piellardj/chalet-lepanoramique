@@ -64,11 +64,11 @@ nav #navbar-items-container {
     opacity: 0;
     transition: transform .2s, opacity .2s;
     border-radius: 0 0 10px 10px;
-    padding-bottom: 1em;
+    padding: 1em 0;
     z-index: -1;
 }
 nav.expanded #navbar-items-container {
-    transform: translateY(74px);
+    transform: translateY(70px);
     box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);
     opacity: 1;
 }
