@@ -69,11 +69,9 @@
                     <button id="navbar-toggler" class="rounded" type="button" aria-label="Menu" onclick="navBar.toggle()">
                         <span class="navbar-toggler-icon">
                             <svg class="menu-icon" viewBox="0 0 7 7" width="24px" height="24px">
-                                <!-- <g stroke-linecap="round"> -->
-                                    <path class="menu-icon-upper" d="M1 1h5" />
-                                    <path class="menu-icon-middle" d="M1 3h5" />
-                                    <path class="menu-icon-lower" d="M1 5h5" />
-                                <!-- </g> -->
+                                <path class="menu-icon-upper" d="M1 1h5" />
+                                <path class="menu-icon-middle" d="M1 3h5" />
+                                <path class="menu-icon-lower" d="M1 5h5" />
                             </svg>
                         </span>
                         <span class="navbar-toggler-label">Menu</span>
@@ -391,21 +389,24 @@
                         <div class="col-12 col-md-6">
                             <div class="pb-5">
                                 <h4>Contact</h4>
-                                <div>
+                                <div class="d-flex">
                                     <span class="coord-name">Téléphone:</span>
-                                    <a class="coord-value" href="tel:01 02 03 04 05">01 02 03 04 05</a>
+                                    <a class="coord-value" href="tel:0476800625">04 76 80 06 25</a>
                                 </div>
-                                <div>
+                                <div class="d-flex">
                                     <span class="coord-name">Email:</span>
-                                    <a class="coord-value" href="mailto:monemail@domaine.fr">monemail@domaine.fr</a>
+                                    <a class="coord-value" href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>
                                 </div>
                             </div>
                             <div>
                                 <h4>Accès</h4>
-                                <div>
+                                <div class="d-flex">
                                     <span class="coord-name">Adresse:</span>
-                                    <a class="coord-value" href="https://www.google.com/maps/search/?api=1&query=panoramique%20mizoen">chalet
-                                        MIZOEN</a>
+                                    <a class="coord-value" href="https://www.google.com/maps/search/?api=1&query=panoramique%20mizoen">
+                                        <div>Chalet Le Panoramique</div>
+                                        <div>227 Route d'Emparis</div>
+                                        <div>38142 MIZOËN</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -413,8 +414,11 @@
                 </div>
             </section>
         </main>
-        <footer class="pt-5 pb-1 bg-dark color-light">
-            <p class="text-center text-light">© 2023 Company, Inc</p>
+        <footer class="py-4 bg-dark color-light text-light text-center">
+            <div>
+                <a class="text-light" href="mentions-legales.html" target="_blank">Mentions légales</a>
+            </div>
+            <div>© 2023</div>
         </footer>
     </div>
     <!-- <script src="5.2.3/bootstrap.bundle.min.js"></script> -->
