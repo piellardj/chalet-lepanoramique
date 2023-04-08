@@ -15,6 +15,20 @@ main {
     flex-grow: 1;
 }
 
+#logo-bar {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    flex-flow: row-reverse;
+}
+.header-logo {
+    width: 100px;
+    height: 100px;
+}
+
 nav {
     --nav-background-color: transparent;
     --nav-text-color: white;
@@ -32,6 +46,9 @@ nav.expanded {
 
 nav .navbar-container {
     position: relative;
+}
+
+.navbar-width {
     max-width: 1000px;
     margin: 0 auto;
     padding: 16px 8px;
@@ -129,6 +146,10 @@ nav #navbar-booknow {
 }
 
 @media only screen and (min-width: 950px) {
+    #logo-bar {
+        display: flex;
+    }
+
     nav #navbar-items-container {
         position: relative;
         width: auto;
