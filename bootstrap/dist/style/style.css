@@ -22,10 +22,8 @@ main {
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
-    flex-flow: row-reverse;
 }
 .header-logo {
-    width: 100px;
     height: 100px;
 }
 
@@ -147,7 +145,7 @@ nav #navbar-booknow {
 
 @media only screen and (min-width: 950px) {
     #logo-bar {
-        display: flex;
+        display: block;
     }
 
     nav #navbar-items-container {
