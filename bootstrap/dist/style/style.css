@@ -15,6 +15,19 @@ main {
     flex-grow: 1;
 }
 
+#logo-velo {
+    display: none;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 100px;
+}
+@media only screen and (min-width: 1210px) {
+    #logo-velo {
+        display: block;
+    }
+}
+
 #logo-bar {
     display: none;
     position: absolute;
@@ -145,7 +158,8 @@ nav #navbar-booknow {
 
 @media only screen and (min-width: 950px) {
     #logo-bar {
-        display: block;
+        display: flex;
+        flex-flow: row-reverse;
     }
 
     nav #navbar-items-container {
