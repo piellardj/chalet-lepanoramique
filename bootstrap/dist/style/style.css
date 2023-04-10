@@ -22,7 +22,7 @@ main {
     left: 50px;
     height: 100px;
 }
-@media only screen and (min-width: 1210px) {
+@media only screen and (min-width: 1300px) {
     #logo-velo {
         display: block;
     }
@@ -35,6 +35,13 @@ main {
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
+}
+
+.header-background {
+    background-image: url("/images/header-background.jpg");
+    background-image: url("/images/header-background.webp");
+    background-size:cover;
+    min-height:100vh;
 }
 
 nav {

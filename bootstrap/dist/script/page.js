@@ -73,18 +73,3 @@ function scrollToElement(id /* string */) /* false */ {
     });
     navBar.closeNavbar();
 }
-
-(function() {
-    const temporaryElement = document.getElementById("temporary");
-    const finalElement = document.getElementById("final");
-
-    let nbClicks = 0;
-    document.addEventListener("click", () => {
-        nbClicks++;
-
-        if (nbClicks === 10) {
-            temporaryElement.style.display = "none";
-            finalElement.style.display = "";
-        }
-    });
-})();
