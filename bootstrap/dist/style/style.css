@@ -302,3 +302,9 @@ nav.expanded svg.menu-icon path.menu-icon-middle {
 nav.expanded svg.menu-icon path.menu-icon-lower {
     transform: translate(1.7px,4.6px) rotate(-45deg) translate(-1px,-5px);;
 }
+
+footer button.btn {
+    background: none !important;
+    border: none !important;
+    margin-bottom: 3px;
+}
