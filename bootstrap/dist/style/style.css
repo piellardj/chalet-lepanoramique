@@ -40,8 +40,8 @@ main {
 .header-background {
     background-image: url("/images/header-background.jpg");
     background-image: url("/images/header-background.webp");
-    background-size:cover;
-    min-height:100vh;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 nav {
@@ -254,6 +254,12 @@ section p {
     margin-bottom: 0.5rem!important;
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+.card-image,
+.card-image picture,
+.card-image img {
+    width: 100%;
 }
 
 h2 {
