@@ -7,7 +7,7 @@
     <meta name="description" content="Site web du chalet-hôtel Le panoramique à Mizoën, 2 Alpes, France">
     <title>Le Panoramique</title>
     <link href="5.2.3/bootstrap.min.css?v=1" rel="stylesheet">
-    <link href="style/style.css?v=5" rel="stylesheet">
+    <link href="style/style.css?v=6" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <picture >
+            <picture>
                 <source srcset="images/logos/logo_velo.webp">
                 <img id="logo-velo" class="rounded" src="images/logos/logo_velo.jpg" alt="Logo accueil vélo" />
             </picture>
@@ -106,7 +106,55 @@
                 <h2>Le chalet</h2>
                 <div class="row align-items-start">
                     <div class="col-12 col-md-6 mb-3">
-                        <img src="images/le-chalet.jpg" alt="Le chalet" class="img-fluid rounded">
+                        <div id="carousel-chalet" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <picture>
+                                        <source srcset="images/chalet/mizoen08-2010_008.webp">
+                                        <img src="images/chalet/mizoen08-2010_008.jpg" class="d-block w-100 rounded" alt="Illustration 1">
+                                    </picture>
+                                </div>
+                                <div class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/chalet/_DSC5913.webp">
+                                        <img src="images/chalet/_DSC5913.jpg" class="d-block w-100 rounded" alt="Illustration 2">
+                                    </picture>
+                                </div>
+                                <div class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/chalet/IMG_3222.webp">
+                                        <img src="images/chalet/IMG_3222.jpg" class="d-block w-100 rounded" alt="Illustration 3">
+                                    </picture>
+                                </div>
+                                <div class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/chalet/IMG_5340.webp">
+                                        <img src="images/chalet/IMG_5340.jpg" class="d-block w-100 rounded" alt="Illustration 4">
+                                    </picture>
+                                </div>
+                                <div class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/chalet/Photos_mizoen29_oct08_028.webp">
+                                        <img src="images/chalet/Photos_mizoen29_ct08_028.jpg" class="d-block w-100 rounded" alt="Illustration 5">
+                                    </picture>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-chalet" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-chalet" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6" style="font-family: 'Patrick Hand', cursive;font-size: 1.2em;color: #333;letter-spacing: .03em;">
                         <p>
@@ -141,7 +189,55 @@
                 <div class="d-flex row my-4">
                     <div class="col-12 col-md-6 custom-card">
                         <div class="card-header">
-                            <img class="rounded" src="images/room-1.jpg" alt="Chambre 1" style="width:100%" />
+                            <div id="carousel-chambre-premium" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-chambre-premium" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-chambre-premium" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carousel-chambre-premium" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carousel-chambre-premium" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carousel-chambre-premium" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <picture>
+                                            <source srcset="images/chambres/premium/_DSC5957.webp">
+                                            <img src="images/chambres/premium/_DSC5957.jpg" class="d-block w-100 rounded" alt="Illustration 1">
+                                        </picture>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <picture>
+                                            <source srcset="images/chambres/premium/_DSC5973.webp">
+                                            <img src="images/chambres/premium/_DSC5973.jpg" class="d-block w-100 rounded" alt="Illustration 2">
+                                        </picture>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <picture>
+                                            <source srcset="images/chambres/premium/_DSC5991.webp">
+                                            <img src="images/chambres/premium/_DSC5991.jpg" class="d-block w-100 rounded" alt="Illustration 3">
+                                        </picture>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <picture>
+                                            <source srcset="images/chambres/premium/P1030297.webp">
+                                            <img src="images/chambres/premium/P1030297.jpg" class="d-block w-100 rounded" alt="Illustration 4">
+                                        </picture>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <picture>
+                                            <source srcset="images/chambres/premium/_DSC5985.webp">
+                                            <img src="images/chambres/premium/_DSC5985.jpg" class="d-block w-100 rounded" alt="Illustration 5">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-chambre-premium" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-chambre-premium" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="card-title">Chambres premium Panoramiques</div>
@@ -154,7 +250,34 @@
                     </div>
                     <div class="col-12 col-md-6 custom-card">
                         <div class="card-header">
-                            <img class="rounded" src="images/room-3.jpg" alt="Chambre 3" style="width:100%" />
+                            <div id="carousel-chambre-eco" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-chambre-eco" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-chambre-eco" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <picture>
+                                            <source srcset="images/chambres/\economique/P1030254.webp">
+                                            <img src="images/chambres/\economique/P1030254.jpg" class="d-block w-100 rounded" alt="Illustration 1">
+                                        </picture>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <picture>
+                                            <source srcset="images/chambres/\economique/P1030319.webp">
+                                            <img src="images/chambres/\economique/P1030319.jpg" class="d-block w-100 rounded" alt="Illustration 2">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-chambre-eco" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-chambre-eco" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="card-title">Chambres économiques</div>
@@ -712,7 +835,7 @@
     </footer>
 
     <script src="5.2.3/bootstrap.bundle.min.js"></script>
-    <script src="script/page.js?v=2"></script>
+    <script src="script/page.js?v=3"></script>
 </body>
 
 </html>

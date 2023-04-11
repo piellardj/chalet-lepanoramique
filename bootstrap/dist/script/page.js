@@ -73,3 +73,36 @@ function scrollToElement(id /* string */) /* false */ {
     });
     navBar.closeNavbar();
 }
+
+(function initializeCarousels() {
+    const carouselsElements = document.querySelectorAll(".carousel");
+    const carousels = [];
+    for (let i = 0; i < carouselsElements.length; i++) {
+        const carouselElement = carouselsElements[i];
+        const carousel = {
+            element: carouselElement,
+            carousel: bootstrap.Carousel.getOrCreateInstance(carouselElement),
+        };
+        carousel.carousel.interval = 1000;
+        carousels.push(carousel);
+    }
+
+    function isVisible(element /* HTMLElement */) /* boolean */ {
+        const box = element.getBoundingClientRect();
+        return (box.top >= -box.height) && box.bottom <= (window.innerHeight + box.height);
+    }
+
+    function updateCarousels() /* void */ {
+        for (const carousel of carousels) {
+            if (isVisible(carousel.element)) {
+                carousel.carousel.cycle();
+            } else {
+                carousel.carousel.pause();
+            }
+        }
+    }
+
+    document.addEventListener("scroll", updateCarousels);
+    document.addEventListener("resize", updateCarousels);
+    updateCarousels();
+})();
