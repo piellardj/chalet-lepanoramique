@@ -110,6 +110,8 @@ nav #navbar-items-container {
     z-index: -1;
 }
 nav.expanded #navbar-items-container {
+    display: flex;
+    justify-content: center;
     transform: translateY(70px);
     box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);
     opacity: 1;
@@ -124,7 +126,7 @@ nav #navbar-items-container .navbar-items-list {
 
 nav .navbar-link {
     display: inline-block;
-    padding: 8px 32px;
+    padding: 8px;
     color: var(--nav-text-color);
     text-decoration: none !important;
 }
@@ -136,19 +138,33 @@ nav .navbar-item:hover {
     transform: translateX(6px);
 }
 
-nav #navbar-booknow {
+nav .navbar-button {
+    position: relative;
+    display: inline-flex;
+    min-height: 40px;
     border: 1px solid var(--nav-text-color);
     text-transform:uppercase;
     font-weight:bold;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .navbar-brand {
     font-size: 8px;
+    display: none;
 }
 @media only screen and (min-width: 400px) {
     .navbar-brand {
         font-size: 10px;
     }
+}
+
+nav.scrolled .navbar-brand {
+    display: block;
+}
+nav.scrolled #order-bread {
+    display: none;
 }
 
 .navbar-brand-small {
@@ -188,10 +204,6 @@ nav #navbar-booknow {
         height: 100%;
     }
 
-    nav .navbar-link {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
     nav .navbar-item {
         transform: none!important;
     }
@@ -307,6 +319,11 @@ nav.expanded svg.menu-icon path.menu-icon-middle {
 }
 nav.expanded svg.menu-icon path.menu-icon-lower {
     transform: translate(1.7px,4.6px) rotate(-45deg) translate(-1px,-5px);;
+}
+
+nav.expanded .navbar-item .navbar-link {
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 footer button.btn {
