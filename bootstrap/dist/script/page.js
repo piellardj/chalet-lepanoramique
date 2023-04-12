@@ -106,3 +106,8 @@ function scrollToElement(id /* string */) /* false */ {
     document.addEventListener("resize", updateCarousels);
     updateCarousels();
 })();
+
+(function showInitialPopup() {
+    const modal = bootstrap.Modal.getOrCreateInstance("#modal-construction");
+    modal.show();
+})();
