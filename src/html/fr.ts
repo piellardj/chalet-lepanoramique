@@ -1,4 +1,9 @@
 export const trad = {
+    popup_title: `Site en construction`,
+    popup_p1: `Merci pour votre visite 🙂.
+Ce site est en construction.`,
+    popup_p2: `Pour toute demande au sujet du logis-hôtel « Le Panoramique » à Mizoën, merci de passer par le site web existant :`,
+    popup_p3: `À très bientôt.`,
     head_description: `Bienvenue au Chalet-hôtel « Le panoramique » à Mizoën, 2 Alpes, France. Réservez votre séjour dès maintenant, au meilleur prix.`,
     head_title: `Chalet-hôtel « Le Panoramique » à Mizoën, 2 Alpes.`,
     brand_upper: `Chalet hôtel`,
