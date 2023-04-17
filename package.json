@@ -4,11 +4,12 @@
     "scripts": {
         "pre-commit": "npm run rebuild && npm run lint",
         "http-server": "http-server ./website -p 8080 -c-1",
-        "build": "npm run tsc && npm run sass",
-        "clean": "shx rm -rf website/script/* website/style/*",
+        "build": "npm run build:tsc && npm run build:sass && npm build:html",
+        "clean": "shx rm -rf website/script/* website/style/* website/*.html",
         "rebuild": "npm run clean && npm run build",
-        "tsc": "tsc --project src/config/tsconfig.json",
-        "sass": "sass \"src/sass:website/style\" --style=compressed --no-source-map",
+        "build:tsc": "tsc --project src/config/tsconfig.json",
+        "build:sass": "sass \"src/sass:website/style\" --style=compressed --no-source-map",
+        "build:html": "ts-node-script src/html/build.ts",
         "lint": "eslint src/ts -c src/config/.eslintrc.json --ext .ts",
         "lint-fix": "eslint src/ts -c src/config/.eslintrc.json --ext .ts --fix"
     },
@@ -19,6 +20,7 @@
     },
     "devDependencies": {
         "@types/bootstrap": "^5.2.6",
+        "@types/node": "^18.15.11",
         "@typescript-eslint/eslint-plugin": "^5.58.0",
         "@typescript-eslint/parser": "^5.58.0",
         "eslint": "^8.38.0",
@@ -26,5 +28,8 @@
         "sass": "^1.62.0",
         "shx": "^0.3.4",
         "typescript": "^5.0.4"
+    },
+    "dependencies": {
+        "ts-node": "^10.9.1"
     }
 }

@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bienvenue au Chalet-hôtel « Le panoramique » à Mizoën, 2 Alpes, France. Réservez votre séjour dès maintenant, au meilleur prix.">
-    <title>Chalet-hôtel « Le Panoramique » à Mizoën, 2 Alpes.</title>
+    <meta name="description" content="#=(head_description)">
+    <title>#=(head_title)</title>
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
     <link href="5.2.3/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css?v=2023-04-17T11%3A26%3A46.553Z" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -22,39 +22,39 @@
             <div class="navbar-container navbar-width d-flex flex-row justify-content-between align-items-center">
                 <div style="width:10em">
                     <a class="navbar-brand" href="javascript:navbar.scrollToElement('site-hero')">
-                        <div class="navbar-brand-small">Chalet hôtel</div>
-                        <div class="navbar-brand-big">Le Panoramique</div>
+                        <div class="navbar-brand-small">#=(brand_upper)</div>
+                        <div class="navbar-brand-big">#=(brand_lower)</div>
                     </a>
                     <div id="order-bread" class="rounded px-3 navbar-button" style="font-size: .75em;">
-                        <a class="navbar-link" href="/">Commande pain</a>
+                        <a class="navbar-link" href="/">#=(order_bread)</a>
                     </div>
                 </div>
 
                 <div id="navbar-items-container">
                     <ul class="navbar-items-list">
                         <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:navbar.scrollToElement('chalet')">Le chalet</a>
+                            <a class="navbar-link" href="javascript:navbar.scrollToElement('chalet')">#=(section_chalet_title)</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:navbar.scrollToElement('rooms')">Les chambres</a>
+                            <a class="navbar-link" href="javascript:navbar.scrollToElement('rooms')">#=(section_rooms_title)</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:navbar.scrollToElement('restaurant')">Le restaurant bar</a>
+                            <a class="navbar-link" href="javascript:navbar.scrollToElement('restaurant')">#=(section_restaurant_title)</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:navbar.scrollToElement('summer')">L'été</a>
+                            <a class="navbar-link" href="javascript:navbar.scrollToElement('summer')">#=(section_summer_title)</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:navbar.scrollToElement('winter')">L'hiver</a>
+                            <a class="navbar-link" href="javascript:navbar.scrollToElement('winter')">#=(section_winter_title)</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link" href="javascript:navbar.scrollToElement('infos')">Infos utiles</a>
+                            <a class="navbar-link" href="javascript:navbar.scrollToElement('infos')">#=(section_infos_title)</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="rounded px-3 navbar-button">
-                    <a class="navbar-link" href="javascript:navbar.scrollToElement('booknow')">Réserver</a>
+                    <a class="navbar-link" href="javascript:navbar.scrollToElement('booknow')">#=(book_now)</a>
                 </div>
 
                 <button id="navbar-toggler" class="rounded" type="button" aria-label="Menu" onclick="navbar.toggleMenu()">
@@ -65,7 +65,7 @@
                             <path class="menu-icon-lower" d="M1 5h5" />
                         </svg>
                     </span>
-                    <span class="navbar-toggler-label">Menu</span>
+                    <span class="navbar-toggler-label">#=(nav_menu)</span>
                 </button>
             </div>
         </nav>
@@ -75,13 +75,13 @@
         <section id="site-hero" class="d-flex justify-content-between flex-column header-background" style="background-position: center 0px;user-select: none;">
             <div id="hero-text" class="container text-white d-flex flex-column" style="padding-top:100px">
                 <div class="text-uppercase d-block" style="line-height:1em;font-size:.3em;letter-spacing:.2em;padding-left:.1em">
-                    Bienvenue au chalet hôtel
+                    #=(hero_upper)
                 </div>
                 <div class="heading d-block" style="line-height: 1em;font-size:1em">
-                    Le Panoramique ⋆⋆⋆
+                    #=(hero_middle)
                 </div>
                 <div class="text-uppercase d-block text-center" style="line-height:1em;font-size:.25em;letter-spacing:.15em;padding-left:.1em;padding-top:1em">
-                    Vallée du Ferrand · Mizöen · Les 2 Alpes
+                    #=(hero_lower)
                 </div>
             </div>
 
@@ -101,10 +101,10 @@
 
             <div id="booknow" class="container py-5" style="max-width:1000px">
                 <div class="row rounded bg-light p-3 backdrop-shadow">
-                    <h4>Réservez en direct au meilleur prix</h4>
+                    <h4>#=(booknow_title)</h4>
                     <p>
-                        Ouverture imminente du module de réservations.<br />
-                        En attendant, merci de me contacter par email: <a style="color:darkblue" href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>.
+                        #=(booknow_body1)<br />
+                        #=(booknow_body2) <a style="color:darkblue" href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>.
                     </p>
                 </div>
             </div>
@@ -112,7 +112,7 @@
 
         <section id="chalet" class="py-5 bg-light">
             <div class="container">
-                <h2>Le chalet</h2>
+                <h2>#=(section_chalet_title)</h2>
                 <div class="row align-items-start">
                     <div class="col-12 col-md-6 mb-3">
                         <div id="carousel-chalet" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -160,20 +160,15 @@
                     </div>
                     <div class="col-12 col-md-6" style="font-family: 'Patrick Hand', cursive;font-size: 1.2em;color: #333;letter-spacing: .03em;">
                         <p>
-                            Dès votre arrivée au chalet Le Panoramique, vous serez saisis par sa splendide et grandiose vue sur les montagnes environnantes.
-Situé à 1200m d'altitude, le chalet surplombe le charmant village de Mizoën.
-Admirer le panorama depuis sa grande terrasse ou votre balcon privé va devenir votre activité principale.
+                            #=(section_chalet_p1)
                         </p>
                         <p>
-                            Authentique chalet de charme, c'est aussi à l'intérieur que se joue la partition de votre bien-être.
-Je mets tout mon coeur et toute mon énergie à vous accueillir dans les meilleures conditions dès votre arrivée.
-J'ai un réel plaisir à partager ce lieu unique agrémenté pour votre confort, à vous conter l'origine de tel objet, le toucher délicat de telle matière ou encore l'histoire du producteur local choisi pour vous régaler.
-Ma seule volonté : rendre votre séjour dans mon chalet inoubliable, votre expérience unique !
+                            #=(section_chalet_p2)
                         </p>
                         <div class="d-flex flex-row justify-content-between">
                             <div>
-                                <p>Soyez les bienvenus,</p>
-                                <p>Le taulier Olivier</p>
+                                <p>#=(section_chalet_p3)</p>
+                                <p>#=(section_chalet_p4)</p>
                             </div>
                             <picture>
                                 <source srcset="images/olivier.webp">
@@ -187,7 +182,7 @@ Ma seule volonté : rendre votre séjour dans mon chalet inoubliable, votre exp�
 
         <section id="rooms" class="py-5">
             <div class="container">
-                <h2>Les chambres</h2>
+                <h2>#=(section_rooms_title)</h2>
                 <div class="d-flex row my-4">
                     <div class="col-12 col-md-6 custom-card">
                         <div class="card-header">
@@ -242,11 +237,9 @@ Ma seule volonté : rendre votre séjour dans mon chalet inoubliable, votre exp�
                             </div>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Chambres premium Panoramiques</h3>
+                            <h3 class="card-title">#=(section_rooms_premium_title)</h3>
                             <p>
-                                Laissez-moi tout d'abord vous présenter les chambres premium Panoramique.
-Elles font toutes face au panorama avec leur balcon privatif et sont équipées de lit King size pour une nuit au confort XXL (divisible en 2 lits jumeaux), de plateaux courtoisie, de linge de lit en lin français, de toilettes séparées et d'une salle de bain rénovée avec une sélection de produits d'accueil bio et français.
-La décoration vous surprendra par son inspiration montagnarde.
+                                #=(section_rooms_premium_body)
                             </p>
                         </div>
                     </div>
@@ -282,12 +275,9 @@ La décoration vous surprendra par son inspiration montagnarde.
                             </div>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Chambres économiques</h3>
+                            <h3 class="card-title">#=(section_rooms_eco_title)</h3>
                             <p>
-                                J'ai voulu offrir à tous la possibilité de séjourner au chalet.
-Aussi j'ai créé des chambres économiques à tarif doux.
-Ces chambres sans balcon vous réservent un agréable confort avec une literie qualitative et du linge de lit en coton.
-La plupart des salles de bain ont été rénovées et une chambre vous offre la possibilité de séjourner à 3 occupants.
+                                #=(section_rooms_eco_body)
                             </p>
                         </div>
                     </div>
@@ -297,36 +287,30 @@ La plupart des salles de bain ont été rénovées et une chambre vous offre la 
 
         <section id="restaurant" class="py-5 dimmed with-background" style="background-image: url(&quot;images/restaurant.jpg&quot;);background-image: url(&quot;images/restaurant.webp&quot;)">
             <div class="container text-light">
-                <h2>Le restaurant bar</h2>
+                <h2>#=(section_restaurant_title)</h2>
                 <div class="d-flex row">
                     <div class="col-12 col-lg-6 custom-card">
-                        <h3 class="card-title">Le restaurant</h3>
+                        <h3 class="card-title">#=(section_restaurant_restaurant_title)</h3>
                         <div class="card-body">
                             <p>
-                                Une belle salle intimiste vous attend pour vous régaler d'un menu du jour cuisiné avec des produits frais, locaux, de saison, rigoureusement sélectionnés pour leur qualité.
-Au chalet, tout est 100% fait maison.
-J'aime la cuisine et les bonnes choses !
-La formule demi-pension vous est proposée à tarif préférentiel lors de votre réservation.
+                                #=(section_restaurant_restaurant_p1)
                             </p>
                             <p>
-                                Si l'envie de « fromage fondu » vous rattrape, vous aurez bien entendu la joie de partager une raclette à la bougie ou encore une fondue iséroise, une croziflette...
-Le restaurant n'est ouvert que le soir pour le diner.
+                                #=(section_restaurant_restaurant_p2)
                             </p>
                             <p>
-                                <b>Restaurant ouvert aux clients extérieurs au chalet sur Réservation uniquement.</b>
+                                <b>#=(section_restaurant_restaurant_footer)</b>
                             </p>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 custom-card">
-                        <h3 class="card-title">Le bar</h3>
+                        <h3 class="card-title">#=(section_restaurant_bar_title)</h3>
                         <div class="card-body">
                             <p>
-                                J'ai choisi de vous offrir une large sélection de boisons exclusivement locales.
-Une occasion unique de découvrir des bières de notre région mais aussi des alcools tels du gin, du whisky sans oublier notre Chartreuse mondialement connue.
-Bien entendu vous trouverez également de la limonade, des jus de fruit, du cola et tant d'autres boissons artisanales.
+                                #=(section_restaurant_bar_body)
                             </p>
                             <p>
-                                <b>Bar ouvert de 11h à 14h00 puis de 17h à 20h.</b>
+                                <b>#=(section_restaurant_bar_footer)</b>
                             </p>
                         </div>
                     </div>
@@ -337,7 +321,7 @@ Bien entendu vous trouverez également de la limonade, des jus de fruit, du cola
         <section id="summer" class="py-5">
             <div class="container">
                 <div>
-                    <h2>L'été</h2>
+                    <h2>#=(section_summer_title)</h2>
                     <div class="d-flex row">
                         <div class="col-12 col-md-6 col-xxl-4 custom-card">
                             <div class="card-header">
@@ -347,12 +331,9 @@ Bien entendu vous trouverez également de la limonade, des jus de fruit, du cola
                                 </picture>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Cyclotourisme</h3>
+                                <h3 class="card-title">#=(section_summer_cyclo_title)</h3>
                                 <p>
-                                    L'Oisans est incontestablement un coin de paradis pour le cyclisme.
-    Vous pourrez vous exercer sur les routes empruntées par le Tour de France et participer à des courses tels la prestigieuse course de la Marmotte.
-    Autour de vous le col du Glandon, le col du Télégraphe, le col du Lautaret, le col du Galibier ou encore les fameuses boucles de l'Alpe d'Huez vous promettent des sorties riches en souvenir.
-    Le chalet Le Panoramique est labellisé « Accueil Cyclo Oisans ».
+                                    #=(section_summer_cyclo_p1)
                                 </p>
                             </div>
                         </div>
@@ -365,10 +346,9 @@ Bien entendu vous trouverez également de la limonade, des jus de fruit, du cola
                                 </picture>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Randonnées et balades</h3>
+                                <h3 class="card-title">#=(section_summer_rando_title)</h3>
                                 <p>
-                                    Un océan de verdure, calme et reposant, au cœur des reliefs escarpés de l'Oisans, vous réserve des escapades riches en émerveillement et émotions, que vous soyez à cheval ou à pied : le Plateau d'Emparis classé Natura 2000 et ses lac Lérié et le lac Noir, la Croix de Cassini, le barrage du Chambon, le Lac des Quirlies, le Pic du Mas de la Grave...
-Les GR50 et GR54 sont à proximité du chalet.
+                                    #=(section_summer_rando_p1)
                                 </p>
                             </div>
                         </div>
@@ -381,11 +361,9 @@ Les GR50 et GR54 sont à proximité du chalet.
                                 </picture>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">VTT</h3>
+                                <h3 class="card-title">#=(section_summer_vtt_title)</h3>
                                 <p>
-                                    Rejoignez une boucle de 36 kms et découvrez le Plateau d'Emparis qui offre des paysages fabuleux, des prairies fleuries à perte de vue avec en toile de fond La Meije et ses glaciers, le tout à environ 2000 m d'altitude.
-Par le Col de Sarenne grimpez à l'Alpe d'Huez et faites le tour de La Garde.
-Mais aussi le chemin des Demoiselles des Deux Alpes ou sa spectaculaire descente de 2600m de dénivelé vers Venosc, la descente du Pic Blanc de l'Alpe d'Huez, et tant d'autres.
+                                    #=(section_summer_vtt_p1)
                                 </p>
                             </div>
                         </div>
@@ -398,10 +376,9 @@ Mais aussi le chemin des Demoiselles des Deux Alpes ou sa spectaculaire descente
                                 </picture>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Ski d'été</h3>
+                                <h3 class="card-title">#=(section_summer_ski_title)</h3>
                                 <p>
-                                    Les skieurs ne seront pas en reste, puisque même en été, Les Deux Alpes vous accueille sur le Glacier du Dôme de la Lauze où même les débutants trouveront des pistes faciles.
-C'est aussi une belle occasion lors de votre séjour estival de découvrir cette activité et pourquoi pas, revenir au chalet en hiver pour découvrir la richesse des domaines skiables environnants.
+                                    #=(section_summer_ski_p1)
                                 </p>
                             </div>
                         </div>
@@ -414,10 +391,9 @@ C'est aussi une belle occasion lors de votre séjour estival de découvrir cette
                                 </picture>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Alpinisme</h3>
+                                <h3 class="card-title">#=(section_summer_alpinism_title)</h3>
                                 <p>
-                                    La Barre des Ecrins, le Rateau, les Bans, la Muzelle mais aussi (et surtout) la Meije, sont des noms mythiques dans le milieu de l'alpinisme.
-Vous aurez tant à faire en Oisans, que ce soit juste éveiller votre curiosité pour le monde vertical ou tenter de vivre le rêve de tout alpiniste : se faire une place, le temps d'une course, dans ce milieu impressionnant, parfois inhospitalier mais si grandiose.
+                                    #=(section_summer_alpinism_p1)
                                 </p>
                             </div>
                         </div>
@@ -430,12 +406,9 @@ Vous aurez tant à faire en Oisans, que ce soit juste éveiller votre curiosité
                                 </picture>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Et tant d'autres activités montagne...</h3>
+                                <h3 class="card-title">#=(section_summer_more_title)</h3>
                                 <p>
-                                    Amis bikers, sachez que le territoire est parfait pour vos balades, tel le Grand Marathon, 260km des plus belles routes de l'Oisans.
-Sport, bien-être, nombreux sont les professionnels qui ont choisi nos montagnes pour exercer : alors nous vous attendons !
-Vous trouverez aussi des marchés, véritables tableaux vivants de la vie locale.
-Tout comme les activités culturelles, visites guidées ou ateliers artistiques.
+                                    #=(section_summer_more_p1)
                                 </p>
                             </div>
                         </div>
@@ -447,7 +420,7 @@ Tout comme les activités culturelles, visites guidées ou ateliers artistiques.
         <section id="winter" class="py-5 dimmed with-background" style="background-image: url(&quot;images/winter.jpg&quot;);background-image: url(&quot;images/winter.webp&quot;)">
             <div class="container text-light">
                 <div>
-                    <h2>L'hiver</h2>
+                    <h2>#=(section_winter_title)</h2>
                     <div class="d-flex row">
                         <div class="col-12 col-md-6 custom-card">
                             <div class="card-header">
@@ -457,16 +430,12 @@ Tout comme les activités culturelles, visites guidées ou ateliers artistiques.
                                 </picture>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Ski d'hiver</h3>
+                                <h3 class="card-title">#=(section_winter_ski_title)</h3>
                                 <p>
-                                    Station de ski phare du département de l'Isère, Les 2 Alpes jouit d'une réputation internationale.
+                                    #=(section_winter_ski_p1)
                                 </p>
                                 <p>
-                                    Avec une neige naturelle garantie grâce au glacier culminant à 3600m d'altitude, vous avez l'assurance de skier en toute saison.
-Ce domaine skiable est un véritable paradis de la glisse qui s'étend sur 410 hectares de pistes balisées.
-C'est l'un des plus hauts sommets skiables des Alpes avec un dénivelé maximum de 2300m négatif.
-Sa verticalité permet d'enchaîner les virages sur une piste partant du glacier à 3600m et allant jusqu'au village de Mont de Lans à 1300m.
-Le tout sans utiliser une seule fois les remontées mécaniques.
+                                    #=(section_winter_ski_p2)
                                 </p>
                             </div>
                         </div>
@@ -478,33 +447,29 @@ Le tout sans utiliser une seule fois les remontées mécaniques.
                                 </picture>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Autres activités</h3>
+                                <h3 class="card-title">#=(section_winter_other_title)</h3>
                                 <p>
-                                    Il serait fastidieux de toutes les lister tellement le panel est grand : ce sont plus de 70 activités recensées en hiver aux 2 Alpes.
+                                    #=(section_winter_other_p1)
                                 </p>
                                 <p>
-                                    Vous êtes plutôt sportif ?
-Le VTT sur neige, le trail, le ski de randonnée, le parapente sont faits pour vous !
-Essayez une activité insolite et venez sauter sur l'Air Bag, visiter la grotte de glace, marcher sur la passerelle dans le vide du Belvédère à 3400m tout en admirant les paysages sur les sommets enneigés... c'est à couper le souffle !
-Vous préférez peut-être les espaces bien être et la remise en forme, les promenades en raquettes, la patin à glace, les descentes de luges... à vous de choisir !
+                                    #=(section_winter_other_p2)
                                 </p>
                             </div>
                         </div>
 
                         <div class="col-12 col-lg-6 custom-card">
-                            <h3 class="card-title">Le chalet est situé au milieu de 3 domaines skiables prestigieux que sont :</h3>
+                            <h3 class="card-title">#=(section_winter_bloc1_title)</h3>
                             <div class="card-body">
                                 <p>
                                 <ul style="text-align:left">
-                                    <li>les Deux Alpes à 3km (200km de pistes, 2500m de dénivelé grâce au glacier, un enneigement permanent);</li>
-                                    <li>l'Alpe d'Huez à 15km (220km de pistes, 2200m de dénivelé avec la descente de 16 km du Pic Blanc par Sarenne);</li>
-                                    <li>la Grave-La Meije à 15km avec son sommet à 3983m d'altitude;</li>
-                                    <li>le domaine de Serre Chevalier à environ 40 minutes de route.</li>
+                                    <li>#=(section_winter_bloc1_p1_li1)</li>
+                                    <li>#=(section_winter_bloc1_p1_li2)</li>
+                                    <li>#=(section_winter_bloc1_p1_li3)</li>
+                                    <li>#=(section_winter_bloc1_p1_li4)</li>
                                 </ul>
                                 </p>
                                 <p>
-                                    Mais aussi la Cascade de glace, les balades en raquettes, le ski de randonnée, le ski de fond, le ski hors piste (à la Grave/La Meije ou la descente du grand Sablat à Alpes d'Huez/Clavans)... tout est à proximité.
-Vous préférez peut-être les espaces bien être et la remise en forme, les promenades en raquettes, la patin à glace, les descentes de luges... à vous de choisir !
+                                    #=(section_winter_bloc1_p2)
                                 </p>
                             </div>
                         </div>
@@ -514,10 +479,10 @@ Vous préférez peut-être les espaces bien être et la remise en forme, les pro
                             <div class="card-body">
                                 <p>
                                 <ul style="text-align:left">
-                                    <li>des prix plus attractifs qu'un hôtel ⋆⋆⋆ au pied des pistes pour un service de qualité et un accueil chaleureux, loin de « l'industrie du ski » en station;</li>
-                                    <li>l'occasion de découvrir 4 domaines skiables d'importance durant votre séjour;</li>
-                                    <li>des séjours flexibles que ce soit pour un week-end, pour quelques jours ou plusieurs semaines, choisissez le jour de votre arrivée;</li>
-                                    <li>le service Skipass vous permettant d'acheter vos forfaits journaliers à des tarifs remisés.</li>
+                                    <li>#=(section_winter_bloc2_p1_li1)</li>
+                                    <li>#=(section_winter_bloc2_p1_li2)</li>
+                                    <li>#=(section_winter_bloc2_p1_li3)</li>
+                                    <li>#=(section_winter_bloc2_p1_li4)</li>
                                 </ul>
                                 </p>
                             </div>
@@ -529,31 +494,31 @@ Vous préférez peut-être les espaces bien être et la remise en forme, les pro
 
         <section id="infos" class="py-5 bg-light">
             <div class="container">
-                <h2>Infos utiles</h2>
+                <h2>#=(section_infos_title)</h2>
                 <div class="row mt-4 text-left">
                     <div class="col-12 col-md-6">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.6986852073487!2d6.144188361692429!3d45.05133605999382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a14f9ab5cfa9f%3A0x715585d673b12e46!2sLogis%20H%C3%B4tel%20le%20Panoramique!5e0!3m2!1sfr!2sfr!4v1680296381957!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="col-12 rounded" title="Carte" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="custom-card">
-                            <h3 class="card-title">Contact</h3>
+                            <h3 class="card-title">#=(section_infos_contact_title)</h3>
                             <div class="card-body">
                                 <div class="d-flex">
-                                    <span class="coord-name">Téléphone:</span>
+                                    <span class="coord-name">#=(section_infos_contact_phone)</span>
                                     <a class="coord-value" href="tel:0476800625">04 76 80 06 25</a>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="coord-name">Email:</span>
+                                    <span class="coord-name">#=(section_infos_contact_email)</span>
                                     <a class="coord-value" href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="custom-card">
-                            <h3 class="card-title">Accès</h3>
+                            <h3 class="card-title">#=(section_infos_access_title)</h3>
                             <div class="card-body">
                                 <div class="d-flex">
-                                    <span class="coord-name">Adresse:</span>
+                                    <span class="coord-name">#=(section_infos_access_address)</span>
                                     <a class="coord-value" href="https://www.google.com/maps/search/?api=1&query=panoramique%20mizoen">
                                         <div>Chalet Le Panoramique</div>
                                         <div>227 Route d'Emparis</div>
@@ -911,7 +876,7 @@ Vous préférez peut-être les espaces bien être et la remise en forme, les pro
     </footer>
 
     <script src="5.2.3/bootstrap.bundle.min.js"></script>
-    <script src="script/page.js?v=2023-04-17T11%3A26%3A46.553Z"></script>
+    <script src="script/page.js"></script>
 </body>
 
 </html>
