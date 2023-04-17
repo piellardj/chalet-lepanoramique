@@ -34,5 +34,5 @@ const htmlEn = addTranslations(versionedHtml, en.trad);
 const dstFolder = path.resolve(__dirname, "../../website");
 
 fs.writeFileSync(path.resolve(dstFolder, "index.html"), htmlFr);
-// fs.writeFileSync(path.resolve(dstFolder, "index_en.html"), htmlEn);
+fs.writeFileSync(path.resolve(dstFolder, "index_en.html"), htmlEn);
 fs.writeFileSync(path.resolve(dstFolder, "index_raw.html"), versionedHtml);
