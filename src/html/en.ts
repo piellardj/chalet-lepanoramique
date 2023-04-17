@@ -17,7 +17,7 @@ This website is under construction.`,
     booknow_title: `Book now at the best price`,
     booknow_body1: `The bookings module is still under construction.`,
     booknow_body2: `In the meantime, please contact me by email:`,
-    section_chalet_title: `The Chalet`,
+    section_chalet_title: `Chalet`,
     section_chalet_p1: `As soon as you arrive at chalet Le Panoramique, you will be struck by its splendid and grandiose view of the surrounding mountains.
 Located at an altitude of 1200 m, the chalet overlooks the charming village of Mizoën.
 Admiring the panorama from its large terrace or your private balcony will become your main activity.`,
@@ -37,7 +37,7 @@ The decoration will surprise you with its mountain inspiration.`,
 Also I created economic rooms at low prices.
 These rooms without a balcony offer you pleasant comfort with quality bedding and cotton bed linen.
 Most of the bathrooms have been renovated and one bedroom offers you the possibility of staying with 3 occupants.`,
-    section_restaurant_title: `The restaurant bar`,
+    section_restaurant_title: `Restaurant`,
     section_restaurant_restaurant_title: `The Restaurant`,
     section_restaurant_restaurant_p1: `A beautiful intimate room awaits you to treat yourself to a menu of the day cooked with fresh, local, seasonal products, rigorously selected for their quality.
 At the chalet, everything is 100% homemade.
@@ -101,7 +101,7 @@ You may prefer well-being and fitness areas, snowshoe walks, ice skating, tobogg
     section_winter_bloc2_p1_li2: `the opportunity to discover 4 important ski areas during your stay;`,
     section_winter_bloc2_p1_li3: `flexible stays whether for a weekend, for a few days or several weeks, choose the day of your arrival;`,
     section_winter_bloc2_p1_li4: `the Skipass service allowing you to buy your daily passes at discounted rates.`,
-    section_infos_title: `Useful Info`,
+    section_infos_title: `Informations`,
     section_infos_contact_title: `Contact`,
     section_infos_contact_phone: `Phone:`,
     section_infos_contact_email: `Email:`,
