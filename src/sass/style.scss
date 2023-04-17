@@ -2,6 +2,13 @@ body {
     display: flex;
     flex-flow: column nowrap;
     min-height: 100vh;
+
+    &.lang-en #lang-en {
+        display: none;
+    }
+    &.lang-fr #lang-fr {
+        display: none;
+    }
 }
 
 header {
@@ -34,6 +41,7 @@ main {
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
+    pointer-events: none;
 }
 
 .header-background {
@@ -215,7 +223,9 @@ nav .navbar-button {
 }
 
 #hero-text {
+    position: relative;
     width: fit-content;
+    margin-top:100px;
     font-size: 32px;
     user-select: none;
 
@@ -225,6 +235,23 @@ nav .navbar-button {
     
     @media only screen and (min-width: 780px) {
         font-size: 64px;
+    }
+
+    #lang-block {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: .25em;
+        line-height: 1em;
+        text-transform: uppercase;
+
+        .lang-item {
+            color: white !important;
+        }
+
+        body {
+            
+        }
     }
 }
 

@@ -4,7 +4,7 @@
     "scripts": {
         "pre-commit": "npm run rebuild && npm run lint",
         "http-server": "http-server ./website -p 8080 -c-1",
-        "build": "npm run build:tsc && npm run build:sass && npm build:html",
+        "build": "npm run build:tsc && npm run build:sass && npm run build:html",
         "clean": "shx rm -rf website/script/* website/style/* website/*.html",
         "rebuild": "npm run clean && npm run build",
         "build:tsc": "tsc --project src/config/tsconfig.json",

@@ -1,105 +1,105 @@
 export const trad = {
-    head_description: `Bienvenue au Chalet-hôtel « Le panoramique » à Mizoën, 2 Alpes, France. Réservez votre séjour dès maintenant, au meilleur prix.`,
-    head_title: `Chalet-hôtel « Le Panoramique » à Mizoën, 2 Alpes.`,
-    brand_upper: `Chalet hôtel`,
+    head_description: `Welcome to the Chalet-hotel “Le Panoramic” in Mizoën, 2 Alpes, France. Book your stay now, at the best price.`,
+    head_title: `Chalet-hotel “Le Panoramique” in Mizoen, 2 Alpes.`,
+    brand_upper: `Chalet hotel`,
     brand_lower: `Le Panoramique`,
-    order_bread: `Commande pain`,
-    book_now: `Réserver`,
+    order_bread: `Order bread`,
+    book_now: `Book`,
     nav_menu: `Menu`,
-    hero_upper: `Bienvenue au chalet hôtel`,
+    hero_upper: `Welcome to the chalet hotel`,
     hero_middle: `Le Panoramique ⋆⋆⋆`,
-    hero_lower: `Vallée du Ferrand · Mizöen · Les 2 Alpes`,
-    booknow_title: `Réservez en direct au meilleur prix`,
-    booknow_body1: `Ouverture imminente du module de réservations.`,
-    booknow_body2: `En attendant, merci de me contacter par email:`,
-    section_chalet_title: `Le chalet`,
-    section_chalet_p1: `Dès votre arrivée au chalet Le Panoramique, vous serez saisis par sa splendide et grandiose vue sur les montagnes environnantes.
-Situé à 1200m d'altitude, le chalet surplombe le charmant village de Mizoën.
-Admirer le panorama depuis sa grande terrasse ou votre balcon privé va devenir votre activité principale.`,
-    section_chalet_p2: `Authentique chalet de charme, c'est aussi à l'intérieur que se joue la partition de votre bien-être.
-Je mets tout mon coeur et toute mon énergie à vous accueillir dans les meilleures conditions dès votre arrivée.
-J'ai un réel plaisir à partager ce lieu unique agrémenté pour votre confort, à vous conter l'origine de tel objet, le toucher délicat de telle matière ou encore l'histoire du producteur local choisi pour vous régaler.
-Ma seule volonté : rendre votre séjour dans mon chalet inoubliable, votre expérience unique !`,
-    section_chalet_p3: `Soyez les bienvenus,`,
-    section_chalet_p4: `Le taulier Olivier`,
-    section_rooms_title: `Les chambres`,
-    section_rooms_premium_title: `Chambres premium Panoramiques`,
-    section_rooms_premium_body: `Laissez-moi tout d'abord vous présenter les chambres premium Panoramique.
-Elles font toutes face au panorama avec leur balcon privatif et sont équipées de lit King size pour une nuit au confort XXL (divisible en 2 lits jumeaux), de plateaux courtoisie, de linge de lit en lin français, de toilettes séparées et d'une salle de bain rénovée avec une sélection de produits d'accueil bio et français.
-La décoration vous surprendra par son inspiration montagnarde.`,
-    section_rooms_eco_title: `Chambres économiques`,
-    section_rooms_eco_body: `J'ai voulu offrir à tous la possibilité de séjourner au chalet.
-Aussi j'ai créé des chambres économiques à tarif doux.
-Ces chambres sans balcon vous réservent un agréable confort avec une literie qualitative et du linge de lit en coton.
-La plupart des salles de bain ont été rénovées et une chambre vous offre la possibilité de séjourner à 3 occupants.`,
-    section_restaurant_title: `Le restaurant bar`,
-    section_restaurant_restaurant_title: `Le restaurant`,
-    section_restaurant_restaurant_p1: `Une belle salle intimiste vous attend pour vous régaler d'un menu du jour cuisiné avec des produits frais, locaux, de saison, rigoureusement sélectionnés pour leur qualité.
-Au chalet, tout est 100% fait maison.
-J'aime la cuisine et les bonnes choses !
-La formule demi-pension vous est proposée à tarif préférentiel lors de votre réservation.`,
-    section_restaurant_restaurant_p2: `Si l'envie de « fromage fondu » vous rattrape, vous aurez bien entendu la joie de partager une raclette à la bougie ou encore une fondue iséroise, une croziflette...
-Le restaurant n'est ouvert que le soir pour le diner.`,
-    section_restaurant_restaurant_footer: `Restaurant ouvert aux clients extérieurs au chalet sur Réservation uniquement.`,
-    section_restaurant_bar_title: `Le bar`,
-    section_restaurant_bar_body: `J'ai choisi de vous offrir une large sélection de boisons exclusivement locales.
-Une occasion unique de découvrir des bières de notre région mais aussi des alcools tels du gin, du whisky sans oublier notre Chartreuse mondialement connue.
-Bien entendu vous trouverez également de la limonade, des jus de fruit, du cola et tant d'autres boissons artisanales.`,
-    section_restaurant_bar_footer: `Bar ouvert de 11h à 14h00 puis de 17h à 20h.`,
-    section_summer_title: `L'été`,
-    section_summer_cyclo_title: `Cyclotourisme`,
-    section_summer_cyclo_p1: `L'Oisans est incontestablement un coin de paradis pour le cyclisme.
-    Vous pourrez vous exercer sur les routes empruntées par le Tour de France et participer à des courses tels la prestigieuse course de la Marmotte.
-    Autour de vous le col du Glandon, le col du Télégraphe, le col du Lautaret, le col du Galibier ou encore les fameuses boucles de l'Alpe d'Huez vous promettent des sorties riches en souvenir.
-    Le chalet Le Panoramique est labellisé « Accueil Cyclo Oisans ».`,
-    section_summer_rando_title: `Randonnées et balades`,
-    section_summer_rando_p1: `Un océan de verdure, calme et reposant, au cœur des reliefs escarpés de l'Oisans, vous réserve des escapades riches en émerveillement et émotions, que vous soyez à cheval ou à pied : le Plateau d'Emparis classé Natura 2000 et ses lac Lérié et le lac Noir, la Croix de Cassini, le barrage du Chambon, le Lac des Quirlies, le Pic du Mas de la Grave...
-Les GR50 et GR54 sont à proximité du chalet.`,
-    section_summer_vtt_title: `VTT`,
-    section_summer_vtt_p1: `Rejoignez une boucle de 36 kms et découvrez le Plateau d'Emparis qui offre des paysages fabuleux, des prairies fleuries à perte de vue avec en toile de fond La Meije et ses glaciers, le tout à environ 2000 m d'altitude.
-Par le Col de Sarenne grimpez à l'Alpe d'Huez et faites le tour de La Garde.
-Mais aussi le chemin des Demoiselles des Deux Alpes ou sa spectaculaire descente de 2600m de dénivelé vers Venosc, la descente du Pic Blanc de l'Alpe d'Huez, et tant d'autres.`,
-    section_summer_ski_title: `Ski d'été`,
-    section_summer_ski_p1: `Les skieurs ne seront pas en reste, puisque même en été, Les Deux Alpes vous accueille sur le Glacier du Dôme de la Lauze où même les débutants trouveront des pistes faciles.
-C'est aussi une belle occasion lors de votre séjour estival de découvrir cette activité et pourquoi pas, revenir au chalet en hiver pour découvrir la richesse des domaines skiables environnants.`,
-    section_summer_alpinism_title: `Alpinisme`,
-    section_summer_alpinism_p1: `La Barre des Ecrins, le Rateau, les Bans, la Muzelle mais aussi (et surtout) la Meije, sont des noms mythiques dans le milieu de l'alpinisme.
-Vous aurez tant à faire en Oisans, que ce soit juste éveiller votre curiosité pour le monde vertical ou tenter de vivre le rêve de tout alpiniste : se faire une place, le temps d'une course, dans ce milieu impressionnant, parfois inhospitalier mais si grandiose.`,
-    section_summer_more_title: `Et tant d'autres activités montagne...`,
-    section_summer_more_p1: `Amis bikers, sachez que le territoire est parfait pour vos balades, tel le Grand Marathon, 260km des plus belles routes de l'Oisans.
-Sport, bien-être, nombreux sont les professionnels qui ont choisi nos montagnes pour exercer : alors nous vous attendons !
-Vous trouverez aussi des marchés, véritables tableaux vivants de la vie locale.
-Tout comme les activités culturelles, visites guidées ou ateliers artistiques.`,
-    section_winter_title: `L'hiver`,
-    section_winter_ski_title: `Ski d'hiver`,
-    section_winter_ski_p1: `Station de ski phare du département de l'Isère, Les 2 Alpes jouit d'une réputation internationale.`,
-    section_winter_ski_p2: `Avec une neige naturelle garantie grâce au glacier culminant à 3600m d'altitude, vous avez l'assurance de skier en toute saison.
-Ce domaine skiable est un véritable paradis de la glisse qui s'étend sur 410 hectares de pistes balisées.
-C'est l'un des plus hauts sommets skiables des Alpes avec un dénivelé maximum de 2300m négatif.
-Sa verticalité permet d'enchaîner les virages sur une piste partant du glacier à 3600m et allant jusqu'au village de Mont de Lans à 1300m.
-Le tout sans utiliser une seule fois les remontées mécaniques.`,
-    section_winter_other_title: `Autres activités`,
-    section_winter_other_p1: `Il serait fastidieux de toutes les lister tellement le panel est grand : ce sont plus de 70 activités recensées en hiver aux 2 Alpes.`,
-    section_winter_other_p2: `Vous êtes plutôt sportif ?
-Le VTT sur neige, le trail, le ski de randonnée, le parapente sont faits pour vous !
-Essayez une activité insolite et venez sauter sur l'Air Bag, visiter la grotte de glace, marcher sur la passerelle dans le vide du Belvédère à 3400m tout en admirant les paysages sur les sommets enneigés... c'est à couper le souffle !
-Vous préférez peut-être les espaces bien être et la remise en forme, les promenades en raquettes, la patin à glace, les descentes de luges... à vous de choisir !`,
-    section_winter_bloc1_title: `Le chalet est situé au milieu de 3 domaines skiables prestigieux que sont :`,
-    section_winter_bloc1_p1_li1: `les Deux Alpes à 3km (200km de pistes, 2500m de dénivelé grâce au glacier, un enneigement permanent);`,
-    section_winter_bloc1_p1_li2: `l'Alpe d'Huez à 15km (220km de pistes, 2200m de dénivelé avec la descente de 16 km du Pic Blanc par Sarenne);`,
-    section_winter_bloc1_p1_li3: `la Grave-La Meije à 15km avec son sommet à 3983m d'altitude;`,
-    section_winter_bloc1_p1_li4: `le domaine de Serre Chevalier à environ 40 minutes de route.`,
-    section_winter_bloc1_p2: `Mais aussi la Cascade de glace, les balades en raquettes, le ski de randonnée, le ski de fond, le ski hors piste (à la Grave/La Meije ou la descente du grand Sablat à Alpes d'Huez/Clavans)... tout est à proximité.
-Vous préférez peut-être les espaces bien être et la remise en forme, les promenades en raquettes, la patin à glace, les descentes de luges... à vous de choisir !`,
-    section_winter_bloc2_title: `Les atouts d'un séjour de ski au Panoramique :`,
-    section_winter_bloc2_p1_li1: `des prix plus attractifs qu'un hôtel ⋆⋆⋆ au pied des pistes pour un service de qualité et un accueil chaleureux, loin de « l'industrie du ski » en station;`,
-    section_winter_bloc2_p1_li2: `l'occasion de découvrir 4 domaines skiables d'importance durant votre séjour;`,
-    section_winter_bloc2_p1_li3: `des séjours flexibles que ce soit pour un week-end, pour quelques jours ou plusieurs semaines, choisissez le jour de votre arrivée;`,
-    section_winter_bloc2_p1_li4: `le service Skipass vous permettant d'acheter vos forfaits journaliers à des tarifs remisés.`,
-    section_infos_title: `Infos utiles`,
+    hero_lower: `Ferrand Valley · Les 2 Alpes · France`,
+    booknow_title: `Book now at the best price`,
+    booknow_body1: `The bookings module is still under construction.`,
+    booknow_body2: `In the meantime, please contact me by email:`,
+    section_chalet_title: `The Chalet`,
+    section_chalet_p1: `As soon as you arrive at chalet Le Panoramique, you will be struck by its splendid and grandiose view of the surrounding mountains.
+Located at an altitude of 1200 m, the chalet overlooks the charming village of Mizoën.
+Admiring the panorama from its large terrace or your private balcony will become your main activity.`,
+    section_chalet_p2: `Authentic charming chalet, it is also inside that the partition of your well-being is played.
+I put all my heart and all my energy to welcome you in the best conditions as soon as you arrive.
+I have a real pleasure to share this unique place decorated for your comfort, to tell you the origin of such object, the delicate touch of such material or even the history of the local producer chosen to delight you.
+My only desire: to make your stay in my chalet unforgettable, a unique experience!`,
+    section_chalet_p3: `Welcome,`,
+    section_chalet_p4: `The innkeeper Olivier`,
+    section_rooms_title: `Rooms`,
+    section_rooms_premium_title: `Premium Panoramic Rooms`,
+    section_rooms_premium_body: `Let me first introduce you to the premium Panoramic rooms.
+They all face the panorama with their private balcony and are equipped with a King size bed for a night of XXL comfort (divisible into 2 twin beds), courtesy trays, French linen bed linen, separate toilets and a renovated bathroom with a selection of organic and French hospitality products.
+The decoration will surprise you with its mountain inspiration.`,
+    section_rooms_eco_title: `Economic Rooms`,
+    section_rooms_eco_body: `I wanted to offer everyone the possibility of staying at the chalet.
+Also I created economic rooms at low prices.
+These rooms without a balcony offer you pleasant comfort with quality bedding and cotton bed linen.
+Most of the bathrooms have been renovated and one bedroom offers you the possibility of staying with 3 occupants.`,
+    section_restaurant_title: `The restaurant bar`,
+    section_restaurant_restaurant_title: `The Restaurant`,
+    section_restaurant_restaurant_p1: `A beautiful intimate room awaits you to treat yourself to a menu of the day cooked with fresh, local, seasonal products, rigorously selected for their quality.
+At the chalet, everything is 100% homemade.
+I love cooking and good things!
+The half-board formula is offered to you at a preferential rate when booking.`,
+    section_restaurant_restaurant_p2: `If the desire for "melted cheese" catches up with you, you will of course have the joy of sharing a raclette by candlelight or even an Iséroise fondue, a croziflette...
+The restaurant is only open in the evening for dinner.`,
+    section_restaurant_restaurant_footer: `Restaurant open to customers outside the chalet by reservation only.`,
+    section_restaurant_bar_title: `The Bar`,
+    section_restaurant_bar_body: `I have chosen to offer you a wide selection of exclusively local drinks.
+A unique opportunity to discover beers from our region but also alcohols such as gin, whiskey without forgetting our world famous Chartreuse.
+Of course you will also find lemonade, fruit juices, cola and many other craft drinks.`,
+    section_restaurant_bar_footer: `Bar open from 11 a.m. to 2 p.m. then from 5 p.m. to 8 p.m.`,
+    section_summer_title: `Summer`,
+    section_summer_cyclo_title: `Cycling tourism`,
+    section_summer_cyclo_p1: `Oisans is unquestionably a paradise for cycling.
+    You can practice on the roads taken by the Tour de France and participate in races such as the prestigious race of the Marmotte.
+    Around you the Col du Glandon, the Col du Télégraphe, the Col du Lautaret, the Col du Galibier or the famous loops of Alpe d'Huez promise you outings rich in memories.
+    The chalet Le Panoramique is labeled "Accueil Cyclo Oisans".`,
+    section_summer_rando_title: `Hikes and Walks`,
+    section_summer_rando_p1: `An ocean of greenery, calm and relaxing, in the heart of the steep reliefs of Oisans, offers you rich getaways`,
+    section_summer_mtb_title: `MTB`,
+    section_summer_vtt_title: `Biking`,
+     section_summer_vtt_p1: `Join a 36 km loop and discover the Plateau d'Emparis which offers fabulous landscapes, flowery meadows as far as the eye can see with La Meije and its glaciers as a backdrop, all at an altitude of around 2000 m.
+Via the Col de Sarenne climb to Alpe d'Huez and go around La Garde.
+But also the Chemin des Demoiselles des 2 Alpes or its spectacular descent of 2600 m in altitude to Venosc, the descent of the Pic Blanc de l'Alpe d'Huez, and many others.`,
+     section_summer_ski_title: `Summer Ski`,
+     section_summer_ski_p1: `Skiers will not be left out, since even in summer, Les 2 Alpes welcomes you to the Glacier du Dôme de la Lauze where even beginners will find easy slopes.
+It is also a great opportunity during your summer stay to discover this activity and why not, come back to the chalet in winter to discover the richness of the surrounding ski areas.`,
+     section_summer_alpinism_title: `Mountaineering`,
+     section_summer_alpinism_p1: `La Barre des Ecrins, le Rateau, les Bans, la Muzelle but also (and above all) la Meije, are mythical names in the world of mountaineering.
+You will have so much to do in Oisans, whether it's just arousing your curiosity for the vertical world or trying to live the dream of every mountaineer: find a place, for the time of a race, in this impressive environment, sometimes inhospitable but so grand.`,
+     section_summer_more_title: `And so many other mountain activities...`,
+     section_summer_more_p1: `Friends bikers, know that the territory is perfect for your rides, such as the Grand Marathon, 260 km of the most beautiful roads in Oisans.
+Sport, well-being, many professionals have chosen our mountains to exercise: so we are waiting for you!
+You will also find markets, veritable living pictures of local life.
+Just like cultural activities, guided tours or artistic workshops.`,
+    section_winter_title: `Winter`,
+    section_winter_ski_title: `Winter Skiing`,
+    section_winter_ski_p1: `A flagship ski resort in the Isère department, Les 2 Alpes enjoys an international reputation.`,
+    section_winter_ski_p2: `With guaranteed natural snow thanks to the glacier culminating at an altitude of 3600 m, you are guaranteed to ski in all seasons.
+This ski area is a veritable skiing paradise that extends over 410 hectares of marked trails.
+It is one of the highest skiable peaks in the Alps with a maximum vertical drop of 2300 m negative.
+Its verticality makes it possible to link turns on a track starting from the glacier at 3600 m and going to the village of Mont de Lans at 1300 m.
+All without using the ski lifts once.`,
+    section_winter_other_title: `Other Activities`,
+    section_winter_other_p1: `It would be tedious to list them all because the panel is so large: there are more than 70 activities listed in winter in Les 2 Alpes.`,
+    section_winter_other_p2: `Are you more athletic?
+Mountain biking on snow, trail running, ski touring, paragliding are made for you!
+Try an unusual activity and come and jump on the Air Bag, visit the ice cave, walk on the footbridge in the void of the Belvedere at 3400 m while admiring the landscapes on the snow-capped peaks... it's breathtaking !
+You may prefer well-being and fitness areas, snowshoe walks, ice skating, toboggan runs... the choice is yours!`,
+    section_winter_bloc1_title: `The chalet is located in the middle of 3 prestigious ski areas which are:`,
+    section_winter_bloc1_p1_li1: `Les 2 Alpes at 3 km (200 km of slopes, 2500 m drop thanks to the glacier, permanent snow cover);`,
+    section_winter_bloc1_p1_li2: `Alpe d'Huez at 15 km (220 km of slopes, 2200 m drop with the 16 km descent of the Pic Blanc by Sarenne);`,
+    section_winter_bloc1_p1_li3: `la Grave-La Meije at 15 km with its summit at 3983 m above sea level;`,
+    section_winter_bloc1_p1_li4: `the domain of Serre Chevalier about 40 minutes drive.`,
+    section_winter_bloc1_p2: `But also the Icefall, snowshoeing, ski touring, cross-country skiing, off-piste skiing (at La Grave/La Meije or the descent of the Grand Sablat in Alpes d'Huez/Clavans) ... everything is close.
+You may prefer well-being and fitness areas, snowshoe walks, ice skating, toboggan runs... the choice is yours!`,
+    section_winter_bloc2_title: `The advantages of a ski holiday at Le Panoramique:`,
+    section_winter_bloc2_p1_li1: `more attractive prices than a hotel ⋆⋆⋆ at the foot of the slopes for quality service and a warm welcome, far from the "ski industry" in the resort;`,
+    section_winter_bloc2_p1_li2: `the opportunity to discover 4 important ski areas during your stay;`,
+    section_winter_bloc2_p1_li3: `flexible stays whether for a weekend, for a few days or several weeks, choose the day of your arrival;`,
+    section_winter_bloc2_p1_li4: `the Skipass service allowing you to buy your daily passes at discounted rates.`,
+    section_infos_title: `Useful Info`,
     section_infos_contact_title: `Contact`,
-    section_infos_contact_phone: `Téléphone:`,
+    section_infos_contact_phone: `Phone:`,
     section_infos_contact_email: `Email:`,
-    section_infos_access_title: `Accès`,
-    section_infos_access_address: `Adresse:`,
-}
+    section_infos_access_title: `Access`,
+    section_infos_access_address: `Address:`,
+};
