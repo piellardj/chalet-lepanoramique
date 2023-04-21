@@ -127,6 +127,3 @@ class Navbar {
 const navbar = new Navbar();
 Carousels.initialize();
 Hero.initialize();
-
-const modal = bootstrap.Modal.getOrCreateInstance("#modal-construction");
-modal.show();

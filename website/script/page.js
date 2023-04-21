@@ -123,6 +123,4 @@ var Navbar = /** @class */ (function () {
 var navbar = new Navbar();
 Carousels.initialize();
 Hero.initialize();
-var modal = bootstrap.Modal.getOrCreateInstance("#modal-construction");
-modal.show();
 //# sourceMappingURL=page.js.map
