@@ -23,6 +23,7 @@ J'ai un réel plaisir à partager ce lieu unique agrémenté pour votre confort,
 Ma seule volonté : rendre votre séjour dans mon chalet inoubliable, votre expérience unique !`,
     section_chalet_p3: `Soyez les bienvenus,`,
     section_chalet_p4: `Le taulier Olivier`,
+    section_photos_title: `Photos`,
     section_rooms_title: `Les chambres`,
     section_rooms_premium_title: `Chambres premium Panoramiques`,
     section_rooms_premium_body: `Laissez-moi tout d'abord vous présenter les chambres premium Panoramique.

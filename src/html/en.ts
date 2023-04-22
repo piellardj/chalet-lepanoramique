@@ -23,6 +23,7 @@ I have a real pleasure to share this unique place decorated for your comfort, to
 My only desire: to make your stay in my chalet unforgettable, a unique experience!`,
     section_chalet_p3: `Welcome,`,
     section_chalet_p4: `The innkeeper Olivier`,
+    section_photos_title: `Gallery`,
     section_rooms_title: `Rooms`,
     section_rooms_premium_title: `Premium Panoramic Rooms`,
     section_rooms_premium_body: `Let me first introduce you to the premium Panoramic rooms.

@@ -299,9 +299,6 @@ h2 {
     text-align: center;
     margin-bottom: 1em;
 }
-section {
-    min-height: 500px;
-}
 
 .custom-card {
     padding-left: 1em;
@@ -354,4 +351,8 @@ footer button.btn {
     background: none !important;
     border: none !important;
     margin-bottom: 3px;
+}
+
+.lightbox-carousel .carousel-inner {
+    border-radius: 8px;
 }
