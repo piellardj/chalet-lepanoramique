@@ -77,19 +77,19 @@
     <main>
         <section id="site-hero" class="d-flex justify-content-between flex-column header-background" style="background-position: center 0px;user-select: none;">
             <div id="hero-text" class="container text-white d-flex flex-column">
-                <div class="text-uppercase d-block" style="line-height:1em;font-size:.3em;letter-spacing:.2em;padding-left:.1em">
-                    #=(hero_upper)
+                <div class="text-uppercase d-flex justify-content-between" style="line-height:1em;font-size:.3em;letter-spacing:.15em;padding-left:.2em;padding-right:.2em;z-index:1">
+                    <span>#=(hero_upper)</span>
+                    <span id="lang-block">
+                        <a id="lang-fr" class="lang-item" href="/">fr</a>
+                        <a id="lang-en" class="lang-item" href="/index_en.html">en</a>
+                    </span>
                 </div>
                 <div class="heading d-block" style="line-height: 1em;font-size:1em">
                     #=(hero_middle)
                 </div>
-                <div class="text-uppercase d-block text-center" style="line-height:1em;font-size:.25em;letter-spacing:.15em;padding-left:.1em;padding-top:1em">
+                <div class="text-uppercase d-block text-center" style="line-height:1em;font-size:.3em;letter-spacing:.15em;padding-left:.2em;padding-top:1em">
                     #=(hero_lower)
                 </div>
-                <span id="lang-block">
-                    <a id="lang-fr" class="lang-item" href="/">fr</a>
-                    <a id="lang-en" class="lang-item" href="/index_en.html">en</a>
-                </span>
             </div>
 
             <a href="https://www.bike-oisans.com" target="_blank">

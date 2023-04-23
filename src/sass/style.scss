@@ -238,19 +238,11 @@ nav .navbar-button {
     }
 
     #lang-block {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: .25em;
-        line-height: 1em;
         text-transform: uppercase;
+        letter-spacing: normal;
 
         .lang-item {
             color: white !important;
-        }
-
-        body {
-            
         }
     }
 }
