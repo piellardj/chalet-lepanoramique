@@ -161,6 +161,11 @@ nav .navbar-button {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+
+    .navbar-link {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 .navbar-brand {

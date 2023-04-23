@@ -8,6 +8,7 @@ class Helpers {
 interface ICarousel {
     element: HTMLElement;
     carousel: bootstrap.Carousel;
+    isVisible: boolean;
 }
 
 class Carousels {
@@ -24,8 +25,17 @@ class Carousels {
             const carousel = {
                 element: carouselElement,
                 carousel: bootstrap.Carousel.getOrCreateInstance(carouselElement),
+                isVisible: Helpers.isElementVisible(carouselElement),
             };
-            // carousel.carousel.interval = 1000;
+
+            carousel.element.addEventListener("slide.bs.carousel", (event: any) => {
+                const slide = event.relatedTarget;
+                const video = slide.querySelector("video") as HTMLVideoElement | null;
+                if (video) {
+                    video.currentTime = 0;
+                    video.play();
+                }
+            });
             this.carousels.push(carousel);
         }
 
@@ -36,10 +46,25 @@ class Carousels {
 
     private update(): void {
         for (const carousel of this.carousels) {
-            if (Helpers.isElementVisible(carousel.element)) {
-                carousel.carousel.cycle();
-            } else {
-                carousel.carousel.pause();
+            const forEachVideo = (callback: (vid: HTMLVideoElement) => void): void => {
+                const videos = carousel.element.querySelectorAll("video");
+                for (let i = 0; i < videos.length; i++) {
+                    callback(videos[i]!);
+                }
+            };
+
+            const isVisible = Helpers.isElementVisible(carousel.element);
+            if (isVisible !== carousel.isVisible) {
+                carousel.isVisible = isVisible;
+
+                if (carousel.isVisible) {
+                    carousel.carousel.cycle();
+                    carousel.carousel.to(0);
+                    forEachVideo(video => {
+                        video.currentTime = 0;
+                        video.play();
+                    });
+                }
             }
         }
     }

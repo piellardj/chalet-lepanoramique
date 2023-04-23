@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
     <link href="5.2.3/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css?v=2023-04-23T08%3A18%3A56.843Z" rel="stylesheet">
+    <link href="style/style.css?v=2023-04-23T12%3A24%3A21.629Z" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
                         <div class="navbar-brand-small">Chalet hotel</div>
                         <div class="navbar-brand-big">Le Panoramique</div>
                     </a>
-                    <div id="order-bread" class="rounded px-3 navbar-button" style="font-size: .75em;">
+                    <div id="order-bread" class="rounded navbar-button" style="font-size: .75em;">
                         <a class="navbar-link" href="/">Order bread</a>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     </ul>
                 </div>
 
-                <div class="rounded px-3 navbar-button">
+                <div class="rounded navbar-button">
                     <a class="navbar-link" href="javascript:navbar.scrollToElement('booknow')">Book</a>
                 </div>
 
@@ -128,9 +128,18 @@
                                 <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel-chalet" data-bs-slide-to="4" aria-label="Slide 5"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
+                                <div class="carousel-item active" data-bs-interval="9500">
+                                    <div class="d-flex flex-column justify-content-center rounded" style="aspect-ratio:4 / 3;background:url('images/chalet/video-background.webp');background-size:cover">
+                                        <div class="spinner-border" role="status" style="position: absolute;top: calc(50% - 12px);left: calc(50% - 12px);color: white"> </div>
+                                        <video class="rounded w-100" width="100%" muted autoplay style="z-index:1">
+                                            <source src="images/chalet/DJI_0032~1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
                                     <picture>
                                         <source srcset="images/chalet/mizoen08-2010_008.webp">
                                         <img src="images/chalet/mizoen08-2010_008.jpg" class="d-block w-100 rounded" alt="Illustration 1">
@@ -379,24 +388,6 @@ Of course you will also find lemonade, fruit juices, cola and many other craft d
                         <picture>
                             <source srcset="images/gallerie/chamois_small.webp">
                             <img src="images/gallerie/chamois_small.jpg" class="img-fluid rounded" alt="Chamois">
-                        </picture>
-                    </a>
-                    <a href="images/gallerie/automne-oisans.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="L'automne en Oisans" class="col-12 col-md-6 col-xxl-4 py-2">
-                        <picture>
-                            <source srcset="images/gallerie/automne-oisans_small.webp">
-                            <img src="images/gallerie/automne-oisans_small.jpg" class="img-fluid rounded" alt="L'automne en Oisans">
-                        </picture>
-                    </a>
-                    <a href="images/gallerie/emparis-moutons.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Moutons sur le plateau d'Emparis" class="col-12 col-md-6 col-xxl-4 py-2">
-                        <picture>
-                            <source srcset="images/gallerie/emparis-moutons_small.webp">
-                            <img src="images/gallerie/emparis-moutons_small.jpg" class="img-fluid rounded" alt="Moutons sur le plateau d'Emparis">
-                        </picture>
-                    </a>
-                    <a href="images/gallerie/IMG_8407.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Le plateau d'Emparis" class="col-12 col-md-6 col-xxl-4 py-2">
-                        <picture>
-                            <source srcset="images/gallerie/IMG_8407_small.webp">
-                            <img src="images/gallerie/IMG_8407_small.jpg" class="img-fluid rounded" alt="Le plateau d'Emparis">
                         </picture>
                     </a>
                 </div>
@@ -954,7 +945,7 @@ Just like cultural activities, guided tours or artistic workshops.
 
     <script src="5.2.3/bootstrap.bundle.min.js"></script>
     <script src="5.2.3/bs5-lightbox@1.8.3/index.bundle.min.js"></script>
-    <script src="script/page.js?v=2023-04-23T08%3A18%3A56.843Z"></script>
+    <script src="script/page.js?v=2023-04-23T12%3A24%3A21.629Z"></script>
 </body>
 
 </html>

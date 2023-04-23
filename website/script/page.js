@@ -18,8 +18,16 @@ var Carousels = /** @class */ (function () {
             var carousel = {
                 element: carouselElement,
                 carousel: bootstrap.Carousel.getOrCreateInstance(carouselElement),
+                isVisible: Helpers.isElementVisible(carouselElement),
             };
-            // carousel.carousel.interval = 1000;
+            carousel.element.addEventListener("slide.bs.carousel", function (event) {
+                var slide = event.relatedTarget;
+                var video = slide.querySelector("video");
+                if (video) {
+                    video.currentTime = 0;
+                    video.play();
+                }
+            });
             this.carousels.push(carousel);
         }
         document.addEventListener("scroll", function () { return _this.update(); });
@@ -30,14 +38,29 @@ var Carousels = /** @class */ (function () {
         new Carousels();
     };
     Carousels.prototype.update = function () {
+        var _loop_1 = function (carousel) {
+            var forEachVideo = function (callback) {
+                var videos = carousel.element.querySelectorAll("video");
+                for (var i = 0; i < videos.length; i++) {
+                    callback(videos[i]);
+                }
+            };
+            var isVisible = Helpers.isElementVisible(carousel.element);
+            if (isVisible !== carousel.isVisible) {
+                carousel.isVisible = isVisible;
+                if (carousel.isVisible) {
+                    carousel.carousel.cycle();
+                    carousel.carousel.to(0);
+                    forEachVideo(function (video) {
+                        video.currentTime = 0;
+                        video.play();
+                    });
+                }
+            }
+        };
         for (var _i = 0, _a = this.carousels; _i < _a.length; _i++) {
             var carousel = _a[_i];
-            if (Helpers.isElementVisible(carousel.element)) {
-                carousel.carousel.cycle();
-            }
-            else {
-                carousel.carousel.pause();
-            }
+            _loop_1(carousel);
         }
     };
     return Carousels;
