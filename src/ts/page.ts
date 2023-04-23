@@ -1,7 +1,7 @@
 class Helpers {
     static isElementVisible(element: HTMLElement): boolean {
         const box = element.getBoundingClientRect();
-        return (box.top >= -box.height) && box.bottom <= (window.innerHeight + box.height);
+        return (box.bottom >= Navbar.height) && box.top <= window.innerHeight;
     }
 }
 
@@ -86,6 +86,7 @@ class Hero {
 }
 
 class Navbar {
+    public static readonly height = 58;
     private readonly navbarElement: HTMLElement;
 
     public constructor() {
@@ -110,9 +111,8 @@ class Navbar {
     public scrollToElement(id: string): void {
         const target = document.getElementById(id)!;
 
-        const headerOffset = 58; // height of the navbar
         const elementPosition = target.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+        const offsetPosition = elementPosition + window.scrollY - Navbar.height;
 
         window.scrollTo({
             top: offsetPosition,

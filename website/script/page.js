@@ -4,7 +4,7 @@ var Helpers = /** @class */ (function () {
     }
     Helpers.isElementVisible = function (element) {
         var box = element.getBoundingClientRect();
-        return (box.top >= -box.height) && box.bottom <= (window.innerHeight + box.height);
+        return (box.bottom >= Navbar.height) && box.top <= window.innerHeight;
     };
     return Helpers;
 }());
@@ -102,9 +102,8 @@ var Navbar = /** @class */ (function () {
     }
     Navbar.prototype.scrollToElement = function (id) {
         var target = document.getElementById(id);
-        var headerOffset = 58; // height of the navbar
         var elementPosition = target.getBoundingClientRect().top;
-        var offsetPosition = elementPosition + window.scrollY - headerOffset;
+        var offsetPosition = elementPosition + window.scrollY - Navbar.height;
         window.scrollTo({
             top: offsetPosition,
             left: 0,
@@ -141,6 +140,7 @@ var Navbar = /** @class */ (function () {
     Navbar.prototype.collapseMenu = function () {
         this.navbarElement.classList.remove("expanded");
     };
+    Navbar.height = 58;
     return Navbar;
 }());
 var navbar = new Navbar();
