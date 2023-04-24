@@ -132,9 +132,9 @@ class Navbar {
 
     private updateScrollStyle(): void {
         if (window.scrollY > 0) {
-            this.navbarElement.classList.add("scrolled");
+            document.body.classList.add("scrolled");
         } else {
-            this.navbarElement.classList.remove("scrolled");
+            document.body.classList.remove("scrolled");
         }
     }
 

@@ -121,10 +121,10 @@ var Navbar = /** @class */ (function () {
     };
     Navbar.prototype.updateScrollStyle = function () {
         if (window.scrollY > 0) {
-            this.navbarElement.classList.add("scrolled");
+            document.body.classList.add("scrolled");
         }
         else {
-            this.navbarElement.classList.remove("scrolled");
+            document.body.classList.remove("scrolled");
         }
     };
     Object.defineProperty(Navbar.prototype, "isMenuExpanded", {

@@ -77,29 +77,29 @@
     <main>
         <section id="site-hero" class="d-flex justify-content-between flex-column header-background" style="background-color:#24669D;background-position: center 0px;user-select: none;">
             <div id="hero-text" class="container text-white d-flex flex-column">
-                <div class="text-uppercase d-flex justify-content-between" style="line-height:1em;font-size:.3em;letter-spacing:.15em;padding-left:.2em;padding-right:.2em;z-index:1">
+                <div id="hero-text-upper" class="text-uppercase d-flex justify-content-between" style="line-height:1em;font-size:.3em;letter-spacing:.15em;padding-left:.2em;padding-right:.2em;z-index:1">
                     <span>#=(hero_upper)</span>
                     <span id="lang-block">
                         <a id="lang-fr" class="lang-item" href="/">fr</a>
                         <a id="lang-en" class="lang-item" href="/index_en.html">en</a>
                     </span>
                 </div>
-                <div class="heading d-block" style="line-height: 1em;font-size:1em">
+                <div id="hero-text-middle" class="heading d-block" style="line-height: 1em;font-size:1em">
                     #=(hero_middle)
                 </div>
-                <div class="text-uppercase d-block text-center" style="line-height:1em;font-size:.3em;letter-spacing:.15em;padding-left:.2em;padding-top:1em">
+                <div id="hero-text-lower" class="text-uppercase d-block text-center" style="line-height:1em;font-size:.3em;letter-spacing:.15em;padding-left:.2em;padding-top:1em">
                     #=(hero_lower)
                 </div>
             </div>
 
-            <a href="https://www.bike-oisans.com" target="_blank">
+            <a class="opacity-fadein" href="https://www.bike-oisans.com" target="_blank">
                 <picture>
                     <source srcset="images/logos/logo_velo.webp">
                     <img id="logo-velo" class="rounded" src="images/logos/logo_velo.jpg" alt="Logo accueil vélo" />
                 </picture>
             </a>
 
-            <div id="logo-bar" class="navbar-width">
+            <div id="logo-bar" class="navbar-width opacity-fadein">
                 <picture>
                     <source srcset="images/logos/meilleure_offre.webp">
                     <img class="header-logo" src="images/logos/meilleure_offre.jpg" alt="Logo meilleure offre" width="128px" height="128px" />
