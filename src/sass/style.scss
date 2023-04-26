@@ -156,8 +156,8 @@ nav .navbar-button {
     display: inline-flex;
     min-height: 40px;
     border: 1px solid var(--nav-text-color);
-    text-transform:uppercase;
-    font-weight:bold;
+    text-transform: uppercase;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
@@ -215,7 +215,7 @@ nav .navbar-button {
     }
 
     nav .navbar-item {
-        transform: none!important;
+        transform: none !important;
     }
 
     nav #navbar-toggler {
@@ -248,14 +248,14 @@ nav .navbar-button {
 #hero-text {
     position: relative;
     width: fit-content;
-    margin-top:100px;
+    margin-top: 100px;
     font-size: 32px;
     user-select: none;
 
     @media only screen and (min-width: 500px) {
         font-size: 48px;
     }
-    
+
     @media only screen and (min-width: 780px) {
         font-size: 64px;
     }
@@ -332,7 +332,7 @@ nav .navbar-button {
 
 section.with-background {
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
 }
 section p {
@@ -341,8 +341,8 @@ section p {
 
 .card-title {
     text-align: left;
-    margin-top: 0.5rem!important;
-    margin-bottom: 0.5rem!important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -355,7 +355,38 @@ section p {
 
 h2 {
     text-align: center;
-    margin-bottom: 1em;
+    margin: 0 auto 1em auto;
+    font-size: 2.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+        --line-color: rgba(0 0 0 / 20%);
+
+        .text-light & {
+            --line-color: rgba(255 255 255 / 50%);
+        }
+
+        content: "";
+        height: 1px;
+        flex: 1;
+        transform: translateY(5px);
+        pointer-events: none;
+        background: var(--line-color);
+    }
+
+    &::before {
+        margin-right: 0.5em;
+        background: linear-gradient(to right, var(--line-color), transparent);
+    }
+
+    &::after {
+        margin-left: 0.5em;
+        background: linear-gradient(to left, var(--line-color), transparent);
+    }
 }
 
 .custom-card {
@@ -373,6 +404,7 @@ h2 {
     display: inline-block;
     min-width: 6em;
 }
+
 .coord-value {
     font-weight: bold;
     text-decoration: none !important;
@@ -390,13 +422,15 @@ svg.menu-icon {
 
 nav.expanded {
     svg.menu-icon path.menu-icon-upper {
-        transform: translate(1.7px,1px) rotate(45deg) translate(-1px,-1px);;
+        transform: translate(1.7px, 1px) rotate(45deg) translate(-1px, -1px);
     }
+
     svg.menu-icon path.menu-icon-middle {
         opacity: 0;
     }
+
     svg.menu-icon path.menu-icon-lower {
-        transform: translate(1.7px,4.6px) rotate(-45deg) translate(-1px,-5px);;
+        transform: translate(1.7px, 4.6px) rotate(-45deg) translate(-1px, -5px);
     }
 
     .navbar-item .navbar-link {
