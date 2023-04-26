@@ -1,10 +1,11 @@
 export const trad = {
-    popup_close: `Fermer`,
+    modal_close: `Fermer`,
     head_description: `Bienvenue au Chalet-hôtel « Le panoramique » à Mizoën, 2 Alpes, France. Réservez votre séjour dès maintenant, au meilleur prix.`,
     head_title: `Chalet-hôtel « Le Panoramique » à Mizoën, 2 Alpes.`,
     brand_upper: `Chalet hôtel`,
     brand_lower: `Le Panoramique`,
     order_bread: `Commande pain`,
+    order_bread_not_ready: `La commande de pain n'est pas encore disponible.`,
     book_now: `Réserver`,
     nav_menu: `Menu`,
     hero_upper: `Bienvenue au chalet hôtel`,

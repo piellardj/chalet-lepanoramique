@@ -1,10 +1,11 @@
 export const trad = {
-    popup_close: `Close`,
+    modal_close: `Close`,
     head_description: `Welcome to the Chalet-hotel “Le Panoramic” in Mizoën, 2 Alpes, France. Book your stay now, at the best price.`,
     head_title: `Chalet-hotel “Le Panoramique” in Mizoen, 2 Alpes.`,
     brand_upper: `Chalet hotel`,
     brand_lower: `Le Panoramique`,
     order_bread: `Order bread`,
+    order_bread_not_ready: `Bread orders are not ready yet.`,
     book_now: `Book`,
     nav_menu: `Menu`,
     hero_upper: `Welcome to the chalet hotel`,

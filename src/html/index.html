@@ -26,7 +26,7 @@
                         <div class="navbar-brand-big">#=(brand_lower)</div>
                     </a>
                     <div id="order-bread" class="rounded navbar-button" style="font-size: .75em;">
-                        <a class="navbar-link" href="/">#=(order_bread)</a>
+                        <a class="navbar-link" href="javascript:new bootstrap.Modal('#modal-order-bread').show()">#=(order_bread)</a>
                     </div>
                 </div>
 
@@ -593,12 +593,31 @@
         </section>
     </main>
 
+    <div class="modal fade" id="modal-order-bread" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">#=(order_bread)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#=(modal_close)"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        #=(order_bread_not_ready)
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">#=(modal_close)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="modal-mentions-legales" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Mentions légales</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#=(modal_close)"></button>
                 </div>
                 <div class="modal-body">
                     <p>
@@ -653,7 +672,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">#=(modal_close)</button>
                 </div>
             </div>
         </div>
@@ -664,7 +683,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Conditions Générales de Vente</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#=(modal_close)"></button>
                 </div>
                 <div class="modal-body">
                     <h5>Article 1 / Durée du séjour</h5>
@@ -765,7 +784,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">#=(modal_close)</button>
                 </div>
             </div>
         </div>
@@ -776,7 +795,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Cookies</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#=(modal_close)"></button>
                 </div>
                 <div class="modal-body">
                     <p>
@@ -807,7 +826,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">#=(modal_close)</button>
                 </div>
             </div>
         </div>
@@ -818,7 +837,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Règlement Général sur la Protection des Données</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#=(modal_close)"></button>
                 </div>
                 <div class="modal-body">
                     <p>
@@ -883,7 +902,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">#=(modal_close)</button>
                 </div>
             </div>
         </div>

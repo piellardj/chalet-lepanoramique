@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
     <link href="5.2.3/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css?v=2023-04-24T20%3A51%3A32.256Z" rel="stylesheet">
+    <link href="style/style.css?v=2023-04-26T12%3A46%3A09.046Z" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
                         <div class="navbar-brand-big">Le Panoramique</div>
                     </a>
                     <div id="order-bread" class="rounded navbar-button" style="font-size: .75em;">
-                        <a class="navbar-link" href="/">Order bread</a>
+                        <a class="navbar-link" href="javascript:new bootstrap.Modal('#modal-order-bread').show()">Order bread</a>
                     </div>
                 </div>
 
@@ -627,12 +627,31 @@ Just like cultural activities, guided tours or artistic workshops.
         </section>
     </main>
 
+    <div class="modal fade" id="modal-order-bread" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Order bread</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Bread orders are not ready yet.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="modal-mentions-legales" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Mentions légales</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p>
@@ -687,7 +706,7 @@ Just like cultural activities, guided tours or artistic workshops.
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -698,7 +717,7 @@ Just like cultural activities, guided tours or artistic workshops.
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Conditions Générales de Vente</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <h5>Article 1 / Durée du séjour</h5>
@@ -799,7 +818,7 @@ Just like cultural activities, guided tours or artistic workshops.
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -810,7 +829,7 @@ Just like cultural activities, guided tours or artistic workshops.
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Cookies</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p>
@@ -841,7 +860,7 @@ Just like cultural activities, guided tours or artistic workshops.
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -852,7 +871,7 @@ Just like cultural activities, guided tours or artistic workshops.
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Règlement Général sur la Protection des Données</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p>
@@ -917,7 +936,7 @@ Just like cultural activities, guided tours or artistic workshops.
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -945,7 +964,7 @@ Just like cultural activities, guided tours or artistic workshops.
 
     <script src="5.2.3/bootstrap.bundle.min.js"></script>
     <script src="5.2.3/bs5-lightbox@1.8.3/index.bundle.min.js"></script>
-    <script src="script/page.js?v=2023-04-24T20%3A51%3A32.256Z"></script>
+    <script src="script/page.js?v=2023-04-26T12%3A46%3A09.046Z"></script>
 </body>
 
 </html>

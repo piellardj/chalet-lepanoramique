@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
     <link href="5.2.3/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css?v=2023-04-24T20%3A51%3A32.256Z" rel="stylesheet">
+    <link href="style/style.css?v=2023-04-26T12%3A46%3A09.046Z" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
                         <div class="navbar-brand-big">Le Panoramique</div>
                     </a>
                     <div id="order-bread" class="rounded navbar-button" style="font-size: .75em;">
-                        <a class="navbar-link" href="/">Commande pain</a>
+                        <a class="navbar-link" href="javascript:new bootstrap.Modal('#modal-order-bread').show()">Commande pain</a>
                     </div>
                 </div>
 
@@ -628,6 +628,25 @@ Tout comme les activités culturelles, visites guidées ou ateliers artistiques.
         </section>
     </main>
 
+    <div class="modal fade" id="modal-order-bread" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Commande pain</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        La commande de pain n'est pas encore disponible.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="modal-mentions-legales" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -946,7 +965,7 @@ Tout comme les activités culturelles, visites guidées ou ateliers artistiques.
 
     <script src="5.2.3/bootstrap.bundle.min.js"></script>
     <script src="5.2.3/bs5-lightbox@1.8.3/index.bundle.min.js"></script>
-    <script src="script/page.js?v=2023-04-24T20%3A51%3A32.256Z"></script>
+    <script src="script/page.js?v=2023-04-26T12%3A46%3A09.046Z"></script>
 </body>
 
 </html>
