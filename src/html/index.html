@@ -102,17 +102,23 @@
             <div id="logo-bar" class="navbar-width opacity-fadein">
                 <picture>
                     <source srcset="images/logos/meilleure_offre.webp">
-                    <img class="header-logo" src="images/logos/meilleure_offre.jpg" alt="Logo meilleure offre" width="128px" height="128px" style="transform:translateX(10px)"/>
+                    <img class="header-logo" src="images/logos/meilleure_offre.jpg" alt="Logo meilleure offre" width="128px" height="128px" style="transform:translateX(10px)" />
                 </picture>
             </div>
 
-            <div id="booknow" class="container py-5" style="max-width:1000px">
-                <div class="row rounded bg-light p-3 backdrop-shadow">
-                    <h4>#=(booknow_title)</h4>
-                    <p>
-                        #=(booknow_body1)<br />
-                        #=(booknow_body2) <a style="color:darkblue" href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>.
-                    </p>
+            <div id="booknow" class="container py-5">
+                <div class="row rounded bg-light backdrop-shadow overflow-hidden">
+                    <div class="bg-dark text-light text-center">
+                        <h4 class="my-2">#=(booknow_title)</h4>
+                    </div>
+                    <div class="p-3 pt-0">
+                        <div class="text-center">
+                            <a href="https://chaletlepanoramique.thais-hotel.com/direct-booking/calendar" target="_blank" class="btn btn-primary my-3">#=(book_now)</a>
+                        </div>
+                        <div>
+                            #=(booknow_body1) #=(booknow_body2) <a href="tel:0476800625">04 76 80 06 25</a> #=(booknow_body3) <a href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>.
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -12,8 +12,9 @@ export const trad = {
     hero_middle: `Le Panoramique ⋆⋆⋆`,
     hero_lower: `Vallée du Ferrand · Mizöen · Les 2 Alpes`,
     booknow_title: `Réservez en direct au meilleur prix`,
-    booknow_body1: `Ouverture imminente du module de réservations.`,
-    booknow_body2: `En attendant, merci de me contacter par email:`,
+    booknow_body1: `Un peu perdus ?`,
+    booknow_body2: `Contactez moi au: `,
+    booknow_body3: `ou par email: `,
     section_chalet_title: `Le chalet`,
     section_chalet_p1: `Dès votre arrivée au chalet Le Panoramique, vous serez saisis par sa splendide et grandiose vue sur les montagnes environnantes.
 Situé à 1200 m d'altitude, le chalet surplombe le charmant village de Mizoën.

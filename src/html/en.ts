@@ -12,8 +12,9 @@ export const trad = {
     hero_middle: `Le Panoramique ⋆⋆⋆`,
     hero_lower: `Ferrand Valley · Les 2 Alpes · France`,
     booknow_title: `Book now at the best price`,
-    booknow_body1: `The bookings module is still under construction.`,
-    booknow_body2: `In the meantime, please contact me by email:`,
+    booknow_body1: `A bit lost ?`,
+    booknow_body2: `Contact me by phone: `,
+    booknow_body3: `or by email: `,
     section_chalet_title: `Chalet`,
     section_chalet_p1: `As soon as you arrive at chalet Le Panoramique, you will be struck by its splendid and grandiose view of the surrounding mountains.
 Located at an altitude of 1200 m, the chalet overlooks the charming village of Mizoën.

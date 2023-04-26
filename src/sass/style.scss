@@ -223,8 +223,30 @@ nav .navbar-button {
     }
 }
 
+#booknow {
+    max-width: 800px;
+
+    .btn {
+        padding: 0.75em 2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white !important;
+    }
+
+    a {
+        white-space: nowrap;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 .backdrop-shadow {
-    box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);
+    box-shadow: 0 5px 20px -5px rgb(0 0 0 / 75%);
 }
 
 .opacity-fadein {
