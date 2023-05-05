@@ -7,6 +7,7 @@ export const trad = {
     order_bread: `Order bread`,
     order_bread_not_ready: `Bread orders are not ready yet.`,
     book_now: `Book`,
+    book_now_hero: `Book now`,
     nav_menu: `Menu`,
     hero_upper: `Welcome to the chalet hotel`,
     hero_middle: `Le Panoramique ⋆⋆⋆`,
