@@ -30,7 +30,7 @@ Ma seule volonté : rendre votre séjour dans mon chalet inoubliable, votre exp�
     section_rooms_title: `Les chambres`,
     section_rooms_premium_title: `Chambres premium Panoramiques`,
     section_rooms_premium_body: `Laissez-moi tout d'abord vous présenter les chambres premium Panoramique.
-Elles font toutes face au panorama avec leur balcon privatif et sont équipées de lit King size pour une nuit au confort XXL (divisible en 2 lits jumeaux), de plateaux courtoisie, de linge de lit en lin français, de toilettes séparées et d'une salle de bain rénovée avec une sélection de produits d'accueil bio et français.
+Elles font toutes face au panorama avec leur balcon privatif et sont équipées de lit King size pour une nuit au confort XXL (divisible en 2 lits jumeaux), de linge de lit en lin français, de toilettes séparées et d'une salle de bain rénovée avec une sélection de produits d'accueil bio et français.
 La décoration vous surprendra par son inspiration montagnarde.`,
     section_rooms_eco_title: `Chambres économiques`,
     section_rooms_eco_body: `J'ai voulu offrir à tous la possibilité de séjourner au chalet.

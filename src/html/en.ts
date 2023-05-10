@@ -30,7 +30,7 @@ My only desire: to make your stay in my chalet unforgettable, a unique experienc
     section_rooms_title: `Rooms`,
     section_rooms_premium_title: `Premium Panoramic Rooms`,
     section_rooms_premium_body: `Let me first introduce you to the premium Panoramic rooms.
-They all face the panorama with their private balcony and are equipped with a King size bed for a night of XXL comfort (divisible into 2 twin beds), courtesy trays, French linen bed linen, separate toilets and a renovated bathroom with a selection of organic and French hospitality products.
+They all face the panorama with their private balcony and are equipped with a King size bed for a night of XXL comfort (divisible into 2 twin beds), French linen bed linen, separate toilets and a renovated bathroom with a selection of organic and French hospitality products.
 The decoration will surprise you with its mountain inspiration.`,
     section_rooms_eco_title: `Economic Rooms`,
     section_rooms_eco_body: `I wanted to offer everyone the possibility of staying at the chalet.
