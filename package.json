@@ -1,5 +1,5 @@
 {
-    "name": "site-olivier",
+    "name": "chalet-lepanoramique",
     "homepage": "https://chalet-lepanoramique.fr",
     "scripts": {
         "pre-commit": "npm run rebuild && npm run lint",
@@ -14,7 +14,7 @@
         "lint-fix": "eslint src/ts -c src/config/.eslintrc.json --ext .ts --fix"
     },
     "author": "Jérémie PIELLARD <jeremie.piellard@gmail.com> (https://github.com/piellardj)",
-    "repository": "github:piellardj/water-webgpu",
+    "repository": "github:piellardj/chalet-lepanoramique",
     "engines": {
         "node": ">=18.14.2"
     },
