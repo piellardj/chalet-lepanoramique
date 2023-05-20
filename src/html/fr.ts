@@ -28,14 +28,14 @@ Ma seule volonté : rendre votre séjour dans mon chalet inoubliable, votre exp�
     section_chalet_p4: `Le taulier Olivier`,
     section_photos_title: `Photos`,
     section_rooms_title: `Les chambres`,
-    section_rooms_premium_title: `Chambres premium Panoramiques`,
-    section_rooms_premium_body: `Laissez-moi tout d'abord vous présenter les chambres premium Panoramique.
-Elles font toutes face au panorama avec leur balcon privatif et sont équipées de lit King size pour une nuit au confort XXL (divisible en 2 lits jumeaux), de linge de lit en lin français, de toilettes séparées et d'une salle de bain rénovée avec une sélection de produits d'accueil bio et français.
+    section_rooms_premium_title: `Chambres Premium Panoramiques`,
+    section_rooms_premium_body: `Laissez-moi tout d'abord vous présenter les chambres Premium Panoramique, et
+leur balcon privatif faisant face au panorama exceptionnel. Ces chambres sont équipées de lit King size pour une nuit au confort XXL (divisible en 2 lits jumeaux), de linge de lit en lin français, de toilettes séparées et d'une salle de bain rénovée avec une sélection de produits d'accueil bio et français.
 La décoration vous surprendra par son inspiration montagnarde.`,
-    section_rooms_eco_title: `Chambres économiques`,
+    section_rooms_eco_title: `Chambres Standard`,
     section_rooms_eco_body: `J'ai voulu offrir à tous la possibilité de séjourner au chalet.
-Aussi j'ai créé des chambres économiques à tarif doux.
-Ces chambres sans balcon vous réservent un agréable confort avec une literie qualitative et du linge de lit en coton.
+Aussi j'ai créé des chambres Standard à tarif doux.
+Ces chambres vous réservent un agréable confort avec une literie qualitative et du linge de lit en coton.
 La plupart des salles de bain ont été rénovées et une chambre vous offre la possibilité de séjourner à 3 occupants.`,
     section_restaurant_title: `Le restaurant bar`,
     section_restaurant_restaurant_title: `Le restaurant`,
