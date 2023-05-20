@@ -38,30 +38,21 @@ var Carousels = /** @class */ (function () {
         new Carousels();
     };
     Carousels.prototype.update = function () {
-        var _loop_1 = function (carousel) {
-            var forEachVideo = function (callback) {
-                var videos = carousel.element.querySelectorAll("video");
-                for (var i = 0; i < videos.length; i++) {
-                    callback(videos[i]);
-                }
-            };
+        this.carousels.forEach(function (carousel, index) {
             var isVisible = Helpers.isElementVisible(carousel.element);
             if (isVisible !== carousel.isVisible) {
                 carousel.isVisible = isVisible;
-                if (carousel.isVisible) {
-                    carousel.carousel.cycle();
+                if (carousel.isVisible && index !== 0) {
                     carousel.carousel.to(0);
-                    forEachVideo(function (video) {
+                    var videos = carousel.element.querySelectorAll("video");
+                    for (var i = 0; i < videos.length; i++) {
+                        var video = videos[i];
                         video.currentTime = 0;
                         video.play();
-                    });
+                    }
                 }
             }
-        };
-        for (var _i = 0, _a = this.carousels; _i < _a.length; _i++) {
-            var carousel = _a[_i];
-            _loop_1(carousel);
-        }
+        });
     };
     return Carousels;
 }());

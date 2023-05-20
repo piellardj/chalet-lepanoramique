@@ -45,28 +45,22 @@ class Carousels {
     }
 
     private update(): void {
-        for (const carousel of this.carousels) {
-            const forEachVideo = (callback: (vid: HTMLVideoElement) => void): void => {
-                const videos = carousel.element.querySelectorAll("video");
-                for (let i = 0; i < videos.length; i++) {
-                    callback(videos[i]!);
-                }
-            };
-
+        this.carousels.forEach((carousel: ICarousel, index: number) => {
             const isVisible = Helpers.isElementVisible(carousel.element);
             if (isVisible !== carousel.isVisible) {
                 carousel.isVisible = isVisible;
 
-                if (carousel.isVisible) {
-                    carousel.carousel.cycle();
+                if (carousel.isVisible && index !== 0) {
                     carousel.carousel.to(0);
-                    forEachVideo(video => {
+                    const videos = carousel.element.querySelectorAll("video");
+                    for (let i = 0; i < videos.length; i++) {
+                        const video = videos[i]!;
                         video.currentTime = 0;
                         video.play();
-                    });
+                    }
                 }
             }
-        }
+        });
     }
 }
 
