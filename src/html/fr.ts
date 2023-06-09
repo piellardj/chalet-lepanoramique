@@ -4,8 +4,6 @@ export const trad = {
     head_title: `Chalet-hôtel « Le Panoramique » à Mizoën, 2 Alpes.`,
     brand_upper: `Chalet hôtel`,
     brand_lower: `Le Panoramique`,
-    order_bread: `Commande pain`,
-    order_bread_not_ready: `La commande de pain n'est pas encore disponible.`,
     book_now: `Réserver`,
     book_now_hero: `Réserver maintenant`,
     nav_menu: `Menu`,

@@ -20,14 +20,11 @@
     <header style="position:fixed">
         <nav>
             <div class="navbar-container navbar-width d-flex flex-row justify-content-between align-items-center">
-                <div style="width:10em">
+                <div>
                     <a class="navbar-brand" href="javascript:navbar.scrollToElement('site-hero')">
                         <div class="navbar-brand-small">#=(brand_upper)</div>
                         <div class="navbar-brand-big">#=(brand_lower)</div>
                     </a>
-                    <div id="order-bread" class="rounded navbar-button" style="font-size: .75em;">
-                        <a class="navbar-link" href="javascript:new bootstrap.Modal('#modal-order-bread').show()">#=(order_bread)</a>
-                    </div>
                 </div>
 
                 <div id="navbar-items-container">
@@ -623,25 +620,6 @@
             </div>
         </section>
     </main>
-
-    <div class="modal fade" id="modal-order-bread" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5">#=(order_bread)</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#=(modal_close)"></button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        #=(order_bread_not_ready)
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">#=(modal_close)</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="modal fade" id="modal-mentions-legales" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">

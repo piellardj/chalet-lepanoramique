@@ -4,8 +4,6 @@ export const trad = {
     head_title: `Chalet-hotel “Le Panoramique” in Mizoen, 2 Alpes.`,
     brand_upper: `Chalet hotel`,
     brand_lower: `Le Panoramique`,
-    order_bread: `Order bread`,
-    order_bread_not_ready: `Bread orders are not ready yet.`,
     book_now: `Book`,
     book_now_hero: `Book now`,
     nav_menu: `Menu`,

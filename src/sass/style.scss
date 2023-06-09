@@ -67,13 +67,6 @@ nav {
 
     body.scrolled & {
         box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);
-
-        .navbar-brand {
-            display: block;
-        }
-        #order-bread {
-            display: none;
-        }
     }
     &.expanded {
         box-shadow: none;
@@ -170,7 +163,6 @@ nav .navbar-button {
 
 .navbar-brand {
     font-size: 8px;
-    display: none;
 
     @media only screen and (min-width: 400px) {
         font-size: 10px;
