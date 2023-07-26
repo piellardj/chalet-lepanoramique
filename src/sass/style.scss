@@ -462,3 +462,13 @@ footer button.btn {
 .lightbox-carousel .carousel-inner {
     border-radius: 8px;
 }
+
+div.info {
+    margin: 4px 16px;
+    white-space: nowrap;
+
+    .info-icon {
+        margin-right: .5em;
+        margin-bottom: 2px;
+    }
+}
