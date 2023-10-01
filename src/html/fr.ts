@@ -48,7 +48,7 @@ Le restaurant n'est ouvert que le soir pour le diner.`,
     section_restaurant_bar_body: `J'ai choisi de vous offrir une large sélection de boissons exclusivement locales.
 Une occasion unique de découvrir des bières de notre région mais aussi des alcools tels du gin, du whisky sans oublier notre Chartreuse mondialement connue.
 Bien entendu vous trouverez également de la limonade, des jus de fruit, du cola et tant d'autres boissons artisanales.`,
-    section_restaurant_bar_footer: `Bar ouvert de 11h à 14h00 puis de 17h à 20h.`,
+    section_restaurant_bar_footer: `Bar ouvert à partir de 16h.`,
     section_summer_title: `L'été`,
     section_summer_cyclo_title: `Cyclotourisme`,
     section_summer_cyclo_p1: `L'Oisans est incontestablement un coin de paradis pour le cyclisme.
