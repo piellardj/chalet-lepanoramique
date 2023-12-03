@@ -44,11 +44,18 @@ main {
     pointer-events: none;
 }
 
-.header-background {
-    background-image: url("/images/header-background.jpg");
-    background-image: url("/images/header-background.webp");
+.hero-background {
+    background-color:#24669D;
+    background-image: url("/images/hero-background_summer.jpg");
+    background-image: url("/images/hero-background_summer.webp");
     background-size: cover;
     min-height: 100vh;
+
+    &.winter {
+        background-color: #007BDE;
+        background-image: url("/images/hero-background_winter.jpg");
+        background-image: url("/images/hero-background_winter.webp");
+    }
 }
 
 nav {
