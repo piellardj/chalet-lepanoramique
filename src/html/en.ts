@@ -47,7 +47,7 @@ The restaurant is only open in the evening for dinner.`,
     section_restaurant_bar_body: `I have chosen to offer you a wide selection of exclusively local drinks.
 A unique opportunity to discover beers from our region but also alcohols such as gin, whiskey without forgetting our world famous Chartreuse.
 Of course you will also find lemonade, fruit juices, cola and many other craft drinks.`,
-    section_restaurant_bar_footer: `Bar open from 11 a.m. to 2 p.m. then from 5 p.m. to 8 p.m.`,
+    section_restaurant_bar_footer: `Bar open from 4 p.m.`,
     section_summer_title: `Summer`,
     section_summer_cyclo_title: `Cycling tourism`,
     section_summer_cyclo_p1: `Oisans is unquestionably a paradise for cycling.
