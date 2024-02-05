@@ -87,7 +87,7 @@ Mountain biking on snow, trail running, ski touring, paragliding are made for yo
 Try an unusual activity and come and jump on the Air Bag, visit the ice cave, walk on the footbridge in the void of the Belvedere at 3400 m while admiring the landscapes on the snow-capped peaks... it's breathtaking !
 You may prefer well-being and fitness areas, snowshoe walks, ice skating, toboggan runs... the choice is yours!`,
     section_winter_bloc1_title: `The chalet is located in the middle of 3 prestigious ski areas which are:`,
-    section_winter_bloc1_p1_li1: `Les 2 Alpes at 3 km (200 km of slopes, 2500 m drop thanks to the glacier, permanent snow cover);`,
+    section_winter_bloc1_p1_li1: `Les 2 Alpes at 10 km (200 km of slopes, 2500 m drop thanks to the glacier, permanent snow cover);`,
     section_winter_bloc1_p1_li2: `Alpe d'Huez at 15 km (220 km of slopes, 2200 m drop with the 16 km descent of the Pic Blanc by Sarenne);`,
     section_winter_bloc1_p1_li3: `la Grave-La Meije at 15 km with its summit at 3983 m above sea level;`,
     section_winter_bloc1_p1_li4: `the domain of Serre Chevalier about 40 minutes drive.`,

@@ -88,7 +88,7 @@ Le VTT sur neige, le trail, le ski de randonnée, le parapente sont faits pour v
 Essayez une activité insolite et venez sauter sur l'Air Bag, visiter la grotte de glace, marcher sur la passerelle dans le vide du Belvédère à 3400 m tout en admirant les paysages sur les sommets enneigés... c'est à couper le souffle !
 Vous préférez peut-être les espaces bien être et la remise en forme, les promenades en raquettes, la patin à glace, les descentes de luges... à vous de choisir !`,
     section_winter_bloc1_title: `Le chalet est situé au milieu de 3 domaines skiables prestigieux que sont :`,
-    section_winter_bloc1_p1_li1: `les 2 Alpes à 3 km (200 km de pistes, 2500 m de dénivelé grâce au glacier, un enneigement permanent) ;`,
+    section_winter_bloc1_p1_li1: `les 2 Alpes à 10 km (200 km de pistes, 2500 m de dénivelé grâce au glacier, un enneigement permanent) ;`,
     section_winter_bloc1_p1_li2: `l'Alpe d'Huez à 15 km (220 km de pistes, 2200 m de dénivelé avec la descente de 16 km du Pic Blanc par Sarenne) ;`,
     section_winter_bloc1_p1_li3: `la Grave-La Meije à 15 km avec son sommet à 3983 m d'altitude ;`,
     section_winter_bloc1_p1_li4: `le domaine de Serre Chevalier à environ 40 minutes de route.`,
