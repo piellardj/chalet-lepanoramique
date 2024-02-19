@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
     <link href="5.2.3/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css?v=2024-02-05T09%3A40%3A53.771Z" rel="stylesheet">
+    <link href="style/style.css?v=2024-02-19T12%3A04%3A13.378Z" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -110,7 +110,9 @@
                     </div>
                     <div class="p-3 pt-0">
                         <div class="text-center">
-                            <a href="https://chaletlepanoramique.thais-hotel.com/direct-booking/calendar" target="_blank" class="btn btn-primary my-3">Book now</a>
+                            <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#modal-booknow">
+                                Book now
+                            </button>                            
                         </div>
                         <div>
                             A bit lost ? Contact me by phone:  <a href="tel:0476800625">+33 4 76 80 06 25</a> or by email:  <a href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>.
@@ -982,6 +984,28 @@ Just like cultural activities, guided tours or artistic workshops.
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modal-booknow" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Important information before booking</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Doors are closed from noon to 4 p.m. and after 10 p.m.</p>
+                    <p>The 2 Alpes resort is 12 minutes away (10 km). No transports in Mizoën, you must be have a car.</p>
+                    <p>Please specify in comments if you would like 2 single beds, because by default the rooms are prepared with a double bed.</p>
+                    <p>Please specify in the comments your possible specific diet, because the restaurant offers a unique menu every evening.</p>
+                    <p>We cannot accept pets.</p>
+                    <p>The hotel is not adapted for babies and young children.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="https://chaletlepanoramique.thais-hotel.com/direct-booking/calendar" target="_blank" class="btn btn-primary my-3">Book</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="py-4 bg-dark text-light text-center">
         <div>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-mentions-legales">
@@ -1005,7 +1029,7 @@ Just like cultural activities, guided tours or artistic workshops.
 
     <script src="5.2.3/bootstrap.bundle.min.js"></script>
     <script src="5.2.3/bs5-lightbox@1.8.3/index.bundle.min.js"></script>
-    <script src="script/page.js?v=2024-02-05T09%3A40%3A53.771Z"></script>
+    <script src="script/page.js?v=2024-02-19T12%3A04%3A13.378Z"></script>
 </body>
 
 </html>

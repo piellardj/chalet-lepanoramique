@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
     <link href="5.2.3/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css?v=2024-02-05T09%3A40%3A53.771Z" rel="stylesheet">
+    <link href="style/style.css?v=2024-02-19T12%3A04%3A13.378Z" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -110,7 +110,9 @@
                     </div>
                     <div class="p-3 pt-0">
                         <div class="text-center">
-                            <a href="https://chaletlepanoramique.thais-hotel.com/direct-booking/calendar" target="_blank" class="btn btn-primary my-3">#=(book_now_hero)</a>
+                            <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#modal-booknow">
+                                #=(book_now_hero)
+                            </button>                            
                         </div>
                         <div>
                             #=(booknow_body1) #=(booknow_body2) <a href="tel:0476800625">04 76 80 06 25</a> #=(booknow_body3) <a href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>.
@@ -949,6 +951,28 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modal-booknow" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">#=(book_now_popup_title)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#=(modal_close)"></button>
+                </div>
+                <div class="modal-body">
+                    <p>#=(book_now_popup_text_1)</p>
+                    <p>#=(book_now_popup_text_2)</p>
+                    <p>#=(book_now_popup_text_3)</p>
+                    <p>#=(book_now_popup_text_4)</p>
+                    <p>#=(book_now_popup_text_5)</p>
+                    <p>#=(book_now_popup_text_6)</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="https://chaletlepanoramique.thais-hotel.com/direct-booking/calendar" target="_blank" class="btn btn-primary my-3">#=(book_now_popup_button)</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="py-4 bg-dark text-light text-center">
         <div>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-mentions-legales">
@@ -972,7 +996,7 @@
 
     <script src="5.2.3/bootstrap.bundle.min.js"></script>
     <script src="5.2.3/bs5-lightbox@1.8.3/index.bundle.min.js"></script>
-    <script src="script/page.js?v=2024-02-05T09%3A40%3A53.771Z"></script>
+    <script src="script/page.js?v=2024-02-19T12%3A04%3A13.378Z"></script>
 </body>
 
 </html>

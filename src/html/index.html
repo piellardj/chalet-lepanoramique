@@ -110,7 +110,9 @@
                     </div>
                     <div class="p-3 pt-0">
                         <div class="text-center">
-                            <a href="https://chaletlepanoramique.thais-hotel.com/direct-booking/calendar" target="_blank" class="btn btn-primary my-3">#=(book_now_hero)</a>
+                            <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#modal-booknow">
+                                #=(book_now_hero)
+                            </button>                            
                         </div>
                         <div>
                             #=(booknow_body1) #=(booknow_body2) <a href="tel:0476800625">04 76 80 06 25</a> #=(booknow_body3) <a href="mailto:contact@chalet-lepanoramique.fr">contact@chalet-lepanoramique.fr</a>.
@@ -945,6 +947,28 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">#=(modal_close)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-booknow" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">#=(book_now_popup_title)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#=(modal_close)"></button>
+                </div>
+                <div class="modal-body">
+                    <p>#=(book_now_popup_text_1)</p>
+                    <p>#=(book_now_popup_text_2)</p>
+                    <p>#=(book_now_popup_text_3)</p>
+                    <p>#=(book_now_popup_text_4)</p>
+                    <p>#=(book_now_popup_text_5)</p>
+                    <p>#=(book_now_popup_text_6)</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="https://chaletlepanoramique.thais-hotel.com/direct-booking/calendar" target="_blank" class="btn btn-primary my-3">#=(book_now_popup_button)</a>
                 </div>
             </div>
         </div>
