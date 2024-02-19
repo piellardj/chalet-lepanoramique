@@ -7,7 +7,7 @@ export const trad = {
     book_now: `Réserver`,
     book_now_hero: `Réserver maintenant`,
     book_now_popup_button: `Réserver`,
-    book_now_popup_text_1: `Les portes de l'établissement sont fermées entre 12h et 16h, et après 22h.`,
+    book_now_popup_text_1: `Les portes de l'établissement réouvrent à 16h et referment à 22h.`,
     book_now_popup_text_2: `La station des 2 Alpes est à 12 minutes (10 km). Pas de transport à Mizoën, vous devez être véhiculé.`,
     book_now_popup_text_3: `Merci de préciser en commentaire si vous souhaitez 2 lits simples, car par défaut les chambres sont préparées avec un lit double.`,
     book_now_popup_text_4: `Merci de préciser en commentaire votre éventuel régime spécifique, le restaurant proposant un menu unique.`,
