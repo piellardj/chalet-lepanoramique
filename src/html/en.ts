@@ -96,7 +96,7 @@ Try an unusual activity and come and jump on the Air Bag, visit the ice cave, wa
 You may prefer well-being and fitness areas, snowshoe walks, ice skating, toboggan runs... the choice is yours!`,
     section_winter_bloc1_title: `The chalet is located in the middle of 3 prestigious ski areas which are:`,
     section_winter_bloc1_p1_li1: `Les 2 Alpes at 10 km (200 km of slopes, 2500 m drop thanks to the glacier, permanent snow cover);`,
-    section_winter_bloc1_p1_li2: `Alpe d'Huez at 15 km (220 km of slopes, 2200 m drop with the 16 km descent of the Pic Blanc by Sarenne);`,
+    section_winter_bloc1_p1_li2: `Alpe d'Huez at 15 km via Auris-en-Oisans (220 km of slopes, 2200 m drop with the 16 km descent of the Pic Blanc by Sarenne);`,
     section_winter_bloc1_p1_li3: `la Grave-La Meije at 15 km with its summit at 3983 m above sea level;`,
     section_winter_bloc1_p1_li4: `the domain of Serre Chevalier about 40 minutes drive.`,
     section_winter_bloc1_p2: `But also the Icefall, snowshoeing, ski touring, cross-country skiing, off-piste skiing (at La Grave/La Meije or the descent of the Grand Sablat in Alpes d'Huez/Clavans) ... everything is close.
