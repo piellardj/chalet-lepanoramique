@@ -73,6 +73,16 @@
 
     <main>
         <section id="site-hero" class="d-flex justify-content-between flex-column hero-background" style="background-position: center 0px;user-select: none;">
+            <script>
+                {
+                    const date = new Date();
+                    const month = date.getMonth();
+                    if (month < 3 || month >= 10) {
+                        const section = document.getElementById("site-hero");
+                        section.classList.add("winter");
+                    }
+                }
+            </script>
             <div id="hero-text" class="container text-white d-flex flex-column">
                 <div id="hero-text-upper" class="text-uppercase d-flex justify-content-between" style="line-height:1em;font-size:.3em;letter-spacing:.15em;padding-left:.2em;padding-right:.2em;z-index:1">
                     <span>#=(hero_upper)</span>
