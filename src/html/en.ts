@@ -106,7 +106,6 @@ You may prefer well-being and fitness areas, snowshoe walks, ice skating, tobogg
     section_winter_bloc2_p1_li1: `more attractive prices than a hotel ⋆⋆⋆ at the foot of the slopes for quality service and a warm welcome, far from the "ski industry" in the resort;`,
     section_winter_bloc2_p1_li2: `the opportunity to discover 4 important ski areas during your stay;`,
     section_winter_bloc2_p1_li3: `flexible stays whether for a weekend, for a few days or several weeks, choose the day of your arrival;`,
-    section_winter_bloc2_p1_li4: `the Skipass service allowing you to buy your daily passes at discounted rates.`,
     section_infos_title: `Informations`,
     section_infos_wifi: `Free WiFi`,
     section_infos_parking: `Free parking`,

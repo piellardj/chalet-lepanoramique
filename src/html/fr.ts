@@ -107,7 +107,6 @@ Vous préférez peut-être les espaces bien être et la remise en forme, les pro
     section_winter_bloc2_p1_li1: `des prix plus attractifs qu'un hôtel ⋆⋆⋆ au pied des pistes pour un service de qualité et un accueil chaleureux, loin de « l'industrie du ski » en station ;`,
     section_winter_bloc2_p1_li2: `l'occasion de découvrir 4 domaines skiables d'importance durant votre séjour ;`,
     section_winter_bloc2_p1_li3: `des séjours flexibles que ce soit pour un week-end, pour quelques jours ou plusieurs semaines, choisissez le jour de votre arrivée ;`,
-    section_winter_bloc2_p1_li4: `le service Skipass vous permettant d'acheter vos forfaits journaliers à des tarifs remisés.`,
     section_infos_title: `Infos utiles`,
     section_infos_wifi: `Connexion Wi-Fi gratuite`,
     section_infos_parking: `Parking gratuit`,
