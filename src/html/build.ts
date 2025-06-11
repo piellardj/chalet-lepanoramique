@@ -13,6 +13,11 @@ function addVersioning(source: string): string {
     return processed;
 }
 
+function addCopyright(source: string): string {
+    const date = new Date();
+    return source.replace("COPYRIGHT_YEAR", date.getFullYear().toString());
+}
+
 function addTranslations(source: string, dictionary: Record<string, string>): string {
     return source.replace(/#=\(([^\)]+)\)/gm, (_match: string, p1: string) => {
         const translation = dictionary[p1];
@@ -31,12 +36,13 @@ const sourceFilepath = path.resolve(__dirname, "index.html");
 const sourceHtml = fs.readFileSync(sourceFilepath).toString();
 
 const versionedHtml = addVersioning(sourceHtml);
+const copyrightedHtml = addCopyright(versionedHtml);
 
-const htmlFr = setLanguage(addTranslations(versionedHtml, fr.trad), "fr");
-const htmlEn = setLanguage(addTranslations(versionedHtml, en.trad), "en").replace("04 76 80 06 25",  "+33 4 76 80 06 25");
+const htmlFr = setLanguage(addTranslations(copyrightedHtml, fr.trad), "fr");
+const htmlEn = setLanguage(addTranslations(copyrightedHtml, en.trad), "en").replace("04 76 80 06 25",  "+33 4 76 80 06 25");
 
 const dstFolder = path.resolve(__dirname, "../../website");
 
 fs.writeFileSync(path.resolve(dstFolder, "index.html"), htmlFr);
 fs.writeFileSync(path.resolve(dstFolder, "index_en.html"), htmlEn);
-fs.writeFileSync(path.resolve(dstFolder, "index_raw.html"), versionedHtml);
+fs.writeFileSync(path.resolve(dstFolder, "index_raw.html"), copyrightedHtml);
