@@ -470,6 +470,11 @@ footer button.btn {
     border-radius: 8px;
 }
 
+.lightbox-caption {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+}
+
 div.info {
     margin: 4px 16px;
     white-space: nowrap;
