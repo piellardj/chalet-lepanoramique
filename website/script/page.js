@@ -13,8 +13,7 @@ var Carousels = /** @class */ (function () {
         var _this = this;
         this.carousels = [];
         var carouselsElements = document.querySelectorAll(".carousel");
-        for (var i = 0; i < carouselsElements.length; i++) {
-            var carouselElement = carouselsElements[i];
+        carouselsElements.forEach(function (carouselElement) {
             var carousel = {
                 element: carouselElement,
                 carousel: bootstrap.Carousel.getOrCreateInstance(carouselElement),
@@ -28,8 +27,8 @@ var Carousels = /** @class */ (function () {
                     video.play();
                 }
             });
-            this.carousels.push(carousel);
-        }
+            _this.carousels.push(carousel);
+        });
         document.addEventListener("scroll", function () { return _this.update(); });
         document.addEventListener("resize", function () { return _this.update(); });
         this.update();
@@ -45,11 +44,10 @@ var Carousels = /** @class */ (function () {
                 if (carousel.isVisible && index !== 0) {
                     carousel.carousel.to(0);
                     var videos = carousel.element.querySelectorAll("video");
-                    for (var i = 0; i < videos.length; i++) {
-                        var video = videos[i];
+                    videos.forEach(function (video) {
                         video.currentTime = 0;
                         video.play();
-                    }
+                    });
                 }
             }
         });
@@ -61,12 +59,16 @@ var Hero = /** @class */ (function () {
     }
     Hero.initialize = function () {
         var hero = document.getElementById("site-hero");
-        function updateParallax() {
+        if (!hero) {
+            console.warn("No hero.");
+            return;
+        }
+        var updateParallax = function () {
             var heroHeight = hero.getBoundingClientRect().height;
             var r = window.scrollY / heroHeight;
             var pix = Math.floor(0.25 * r * heroHeight);
             hero.style.backgroundPosition = "center " + pix + "px";
-        }
+        };
         window.addEventListener("scroll", updateParallax);
         window.addEventListener("resize", updateParallax);
         updateParallax();
@@ -74,9 +76,9 @@ var Hero = /** @class */ (function () {
     return Hero;
 }());
 var Navbar = /** @class */ (function () {
-    function Navbar() {
+    function Navbar(navbarElement) {
         var _this = this;
-        this.navbarElement = document.querySelector("header nav");
+        this.navbarElement = navbarElement;
         window.addEventListener("scroll", function () { return _this.updateScrollStyle(); });
         window.addEventListener("resize", function () { return _this.updateScrollStyle(); });
         this.updateScrollStyle();
@@ -93,6 +95,10 @@ var Navbar = /** @class */ (function () {
     }
     Navbar.prototype.scrollToElement = function (id) {
         var target = document.getElementById(id);
+        if (!target) {
+            console.warn("No element #".concat(id));
+            return;
+        }
         var elementPosition = target.getBoundingClientRect().top;
         var offsetPosition = elementPosition + window.scrollY - Navbar.height;
         window.scrollTo({
@@ -134,7 +140,8 @@ var Navbar = /** @class */ (function () {
     Navbar.height = 58;
     return Navbar;
 }());
-var navbar = new Navbar();
+var navbarElement = document.querySelector("header nav");
+var navbar = navbarElement ? new Navbar(navbarElement) : null;
 Carousels.initialize();
 Hero.initialize();
 //# sourceMappingURL=page.js.map

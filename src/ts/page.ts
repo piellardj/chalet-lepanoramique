@@ -20,16 +20,18 @@ class Carousels {
 
     private constructor() {
         const carouselsElements = document.querySelectorAll<HTMLElement>(".carousel");
-        for (let i = 0; i < carouselsElements.length; i++) {
-            const carouselElement = carouselsElements[i]!;
+        carouselsElements.forEach(carouselElement => {
             const carousel = {
                 element: carouselElement,
                 carousel: bootstrap.Carousel.getOrCreateInstance(carouselElement),
                 isVisible: Helpers.isElementVisible(carouselElement),
             };
 
-            carousel.element.addEventListener("slide.bs.carousel", (event: any) => {
-                const slide = event.relatedTarget;
+            type CarouselEvent = {
+                readonly  relatedTarget: HTMLElement;
+            };
+            carousel.element.addEventListener("slide.bs.carousel", event => {
+                const slide = (event as unknown as CarouselEvent).relatedTarget;
                 const video = slide.querySelector("video") as HTMLVideoElement | null;
                 if (video) {
                     video.currentTime = 0;
@@ -37,7 +39,7 @@ class Carousels {
                 }
             });
             this.carousels.push(carousel);
-        }
+        });
 
         document.addEventListener("scroll", () => this.update());
         document.addEventListener("resize", () => this.update());
@@ -53,11 +55,10 @@ class Carousels {
                 if (carousel.isVisible && index !== 0) {
                     carousel.carousel.to(0);
                     const videos = carousel.element.querySelectorAll("video");
-                    for (let i = 0; i < videos.length; i++) {
-                        const video = videos[i]!;
+                    videos.forEach(video => {
                         video.currentTime = 0;
                         video.play();
-                    }
+                    });
                 }
             }
         });
@@ -66,13 +67,18 @@ class Carousels {
 
 class Hero {
     public static initialize(): void {
-        const hero = document.getElementById("site-hero")!;
-        function updateParallax(): void {
+        const hero = document.getElementById("site-hero");
+        if (!hero) {
+            console.warn("No hero.");
+            return;
+        }
+
+        const updateParallax = (): void => {
             const heroHeight = hero.getBoundingClientRect().height;
             const r = window.scrollY / heroHeight;
             const pix = Math.floor(0.25 * r * heroHeight);
             hero.style.backgroundPosition = "center " + pix + "px";
-        }
+        };
         window.addEventListener("scroll", updateParallax);
         window.addEventListener("resize", updateParallax);
         updateParallax();
@@ -83,8 +89,8 @@ class Navbar {
     public static readonly height = 58;
     private readonly navbarElement: HTMLElement;
 
-    public constructor() {
-        this.navbarElement = document.querySelector<HTMLElement>("header nav")!;
+    public constructor(navbarElement: HTMLElement) {
+        this.navbarElement = navbarElement;
 
         window.addEventListener("scroll", () => this.updateScrollStyle());
         window.addEventListener("resize", () => this.updateScrollStyle());
@@ -103,7 +109,11 @@ class Navbar {
     }
 
     public scrollToElement(id: string): void {
-        const target = document.getElementById(id)!;
+        const target = document.getElementById(id);
+        if (!target) {
+            console.warn(`No element #${id}`);
+            return;
+        }
 
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.scrollY - Navbar.height;
@@ -143,6 +153,8 @@ class Navbar {
     }
 }
 
-const navbar = new Navbar();
+const navbarElement = document.querySelector<HTMLElement>("header nav");
+const navbar = navbarElement ? new Navbar(navbarElement) : null;
+
 Carousels.initialize();
 Hero.initialize();
